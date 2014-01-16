@@ -10,7 +10,7 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  */
 
-use cms_core\extensions\Modules;
+use cms_core\extensions\cms\Modules;
 use lithium\g11n\Message;
 
 extract(Message::aliases());

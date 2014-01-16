@@ -10,8 +10,9 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  */
 
-namespace cms_article\models;
+namespace cms_post\models;
 
+use cms_media\models\MediaAttachments;
 use lithium\util\Validator;
 use DateTime;
 
@@ -27,6 +28,18 @@ class Posts extends \lithium\data\Model {
 	];
 
 	protected $_actsAs = [
+		'cms_media\extensions\data\behavior\Coupler' => [
+			'bindings' => [
+				'cover' => [
+					'type' => 'direct',
+					'to' => 'cover_media_id'
+				],
+				'media' => [
+					'type' => 'joined',
+					'to' => 'cms_media\models\MediaAttachments'
+				]
+			]
+		],
 		'cms_core\extensions\data\behavior\Timestamp',
 		'li3_taggable\extensions\data\behavior\Taggable' => [
 			'field' => 'tags',
@@ -35,7 +48,7 @@ class Posts extends \lithium\data\Model {
 		]
 	];
 
-	public static function __init() {
+	public static function init() {
 		$model = static::_object();
 
 		$model->validates['title'] = [
@@ -45,6 +58,7 @@ class Posts extends \lithium\data\Model {
 				'message' => 'Dieses Feld darf nicht leer sein.'
 			]
 		];
+		/*
 		$model->validates['body'] = [
 			[
 				'notEmpty',
@@ -52,6 +66,7 @@ class Posts extends \lithium\data\Model {
 				'message' => 'Dieses Feld darf nicht leer sein.'
 			]
 		];
+		*/
 		$model->validates['tags'] = [
 			[
 				'noSpacesInTags',
@@ -68,5 +83,7 @@ class Posts extends \lithium\data\Model {
 		return DateTime::createFromFormat('Y-m-d H:i:s', $entity->created);
 	}
 }
+
+Posts::init();
 
 ?>
