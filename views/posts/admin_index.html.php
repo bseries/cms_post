@@ -18,6 +18,7 @@ $dateFormatter = new IntlDateFormatter(
 		<table>
 			<thead>
 				<tr>
+					<td><?= $t('publ.?') ?>
 					<td>
 					<td><?= $t('Title') ?>
 					<td><?= $t('Created') ?>
@@ -27,6 +28,8 @@ $dateFormatter = new IntlDateFormatter(
 			<tbody>
 				<?php foreach ($data as $item): ?>
 				<tr>
+					<td>
+						<?= ($item->is_published ? '✓' : '╳') ?>
 					<td>
 						<?php if ($version = $item->cover_medium->version('fix3')): ?>
 							<?= $this->media->image($version->url('http'), ['class' => 'media']) ?>
@@ -41,6 +44,7 @@ $dateFormatter = new IntlDateFormatter(
 					<td>
 						<nav class="actions">
 							<?= $this->html->link($t('delete'), ['id' => $item->id, 'action' => 'delete', 'library' => 'cms_post'], ['class' => 'button']) ?>
+							<?= $this->html->link($item->is_published ? $t('unpublish') : $t('publish'), ['id' => $item->id, 'action' => $item->is_published ? 'unpublish': 'publish', 'library' => 'cms_post'], ['class' => 'button']) ?>
 							<?= $this->html->link($t('edit'), ['id' => $item->id, 'action' => 'edit', 'library' => 'cms_post'], ['class' => 'button']) ?>
 						</nav>
 				<?php endforeach ?>

@@ -29,6 +29,7 @@ require(['media-attachment'], function(MediaAttachment) {
 
 	<?=$this->form->create($item) ?>
 		<?= $this->form->field('title', ['type' => 'text', 'label' => $t('Title')]) ?>
+		<?= $this->form->field('published', ['type' => 'date', 'label' => $t('Publish date')]) ?>
 		<div class="cover media-attachment">
 			<?= $this->form->label('PostsCoverMediaId', $t('Cover')) ?>
 			<?= $this->form->hidden('cover_media_id') ?>

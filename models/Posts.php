@@ -16,9 +16,7 @@ use cms_media\models\MediaAttachments;
 use lithium\util\Validator;
 use DateTime;
 
-class Posts extends \lithium\data\Model {
-
-	use \li3_behaviors\data\model\Behaviors;
+class Posts extends \cms_core\models\Base {
 
 	public $belongsTo = [
 		'CoverMedia' => [
