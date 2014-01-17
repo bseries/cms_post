@@ -83,6 +83,6 @@ class Posts extends \cms_core\models\Base {
 }
 
 Posts::init();
-Media::registerDependent('cms_post\models\Post', ['cover']);
+Media::registerDependent('cms_post\models\Posts', ['cover']);
 
 ?>
