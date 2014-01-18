@@ -12,9 +12,11 @@
 
 use cms_core\extensions\cms\Modules;
 use lithium\g11n\Message;
+use cms_media\models\Media;
 
 extract(Message::aliases());
 
 Modules::register('cms_post', 'posts', ['title' => $t('Posts')]);
+Media::registerDependent('cms_post\models\Posts', ['cover' => 'direct', 'media' => 'joined']);
 
 ?>

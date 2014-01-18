@@ -12,7 +12,6 @@
 
 namespace cms_post\models;
 
-use cms_media\models\Media;
 use lithium\util\Validator;
 use DateTime;
 
@@ -83,6 +82,5 @@ class Posts extends \cms_core\models\Base {
 }
 
 Posts::init();
-Media::registerDependent('cms_post\models\Posts', ['cover']);
 
 ?>
