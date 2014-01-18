@@ -11,7 +11,7 @@ $dateFormatter = new IntlDateFormatter(
 	<h1 class="alpha"><?= $t('Posts') ?></h1>
 
 	<nav class="actions">
-		<?= $this->html->link($t('add post'), ['action' => 'add', 'library' => 'cms_post'], ['class' => 'button']) ?>
+		<?= $this->html->link($t('new post'), ['action' => 'add', 'library' => 'cms_post'], ['class' => 'button']) ?>
 	</nav>
 
 	<?php if ($data->count()): ?>
@@ -21,6 +21,7 @@ $dateFormatter = new IntlDateFormatter(
 					<td><?= $t('publ.?') ?>
 					<td>
 					<td><?= $t('Title') ?>
+					<td><?= $t('Pubdate') ?>
 					<td><?= $t('Created') ?>
 					<td><?= $t('Modified') ?>
 					<td>
@@ -35,6 +36,9 @@ $dateFormatter = new IntlDateFormatter(
 							<?= $this->media->image($version->url('http'), ['class' => 'media']) ?>
 						<?php endif ?>
 					<td><?= $item->title ?>
+					<td>
+						<?php $date = DateTime::createFromFormat('Y-m-d', $item->published) ?>
+						<time datetime="<?= $date->format(DateTime::W3C) ?>"><?= $dateFormatter->format($date) ?></time>
 					<td>
 						<?php $date = DateTime::createFromFormat('Y-m-d H:i:s', $item->created) ?>
 						<time datetime="<?= $date->format(DateTime::W3C) ?>"><?= $dateFormatter->format($date) ?></time>
