@@ -86,6 +86,26 @@ class PostsController extends \lithium\action\Controller {
 
 		return $this->redirect(['action' => 'index', 'library' => 'cms_post']);
 	}
+
+	public function admin_promote() {
+		extract(Message::aliases());
+
+		$item = Posts::find($this->request->id);
+		$item->save(['is_promoted' => true]);
+		FlashMessage::write($t('Successfully promoted.'));
+
+		return $this->redirect(['action' => 'index', 'library' => 'cms_post']);
+	}
+
+	public function admin_unpromote() {
+		extract(Message::aliases());
+
+		$item = Posts::find($this->request->id);
+		$item->save(['is_promoted' => false]);
+		FlashMessage::write($t('Successfully unpromoted.'));
+
+		return $this->redirect(['action' => 'index', 'library' => 'cms_post']);
+	}
 }
 
 ?>
