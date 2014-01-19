@@ -10,6 +10,7 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  */
 
+use cms_core\extensions\cms\Features;
 use cms_core\extensions\cms\Modules;
 use lithium\g11n\Message;
 use cms_media\models\Media;
@@ -18,5 +19,7 @@ extract(Message::aliases());
 
 Modules::register('cms_post', 'posts', ['title' => $t('Posts')]);
 Media::registerDependent('cms_post\models\Posts', ['cover' => 'direct', 'media' => 'joined']);
+
+Features::register('cms_post', 'postPromotion', false);
 
 ?>
