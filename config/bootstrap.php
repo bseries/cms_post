@@ -11,13 +11,17 @@
  */
 
 use cms_core\extensions\cms\Features;
-use cms_core\extensions\cms\Modules;
+use cms_core\extensions\cms\Panes;
 use lithium\g11n\Message;
 use cms_media\models\Media;
 
 extract(Message::aliases());
 
-Modules::register('cms_post', 'posts', ['title' => $t('Posts')]);
+Panes::register('cms_post', 'posts', [
+	'title' => $t('Posts'),
+	'group' => Panes::GROUP_AUTHORING,
+	'url' => ['controller' => 'posts', 'library' => 'cms_post', 'admin' => true]
+]);
 Media::registerDependent('cms_post\models\Posts', ['cover' => 'direct', 'media' => 'joined']);
 
 Features::register('cms_post', 'postPromotion', false);
