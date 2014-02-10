@@ -24,7 +24,7 @@ class Posts extends \cms_core\models\Base {
 		]
 	];
 
-	protected $_actsAs = [
+	protected static $_actsAs = [
 		'cms_media\extensions\data\behavior\Coupler' => [
 			'bindings' => [
 				'cover' => [
