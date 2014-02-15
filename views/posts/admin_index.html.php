@@ -41,7 +41,7 @@ $dateFormatter = new IntlDateFormatter(
 					<?php endif ?>
 
 					<td>
-						<?php if ($version = $item->cover_medium->version('fix3')): ?>
+						<?php if ($version = $item->cover()->version('fix3')): ?>
 							<?= $this->media->image($version->url('http'), ['class' => 'media']) ?>
 						<?php endif ?>
 					<td><?= $item->title ?>
