@@ -55,6 +55,13 @@ class Posts extends \cms_core\models\Base {
 				'message' => 'Dieses Feld darf nicht leer sein.'
 			]
 		];
+		$model->validates['published'] = [
+			[
+				'notEmpty',
+				'on' => ['create', 'update'],
+				'message' => 'Dieses Feld darf nicht leer sein.'
+			]
+		];
 		/*
 		$model->validates['body'] = [
 			[

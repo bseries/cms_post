@@ -4,7 +4,11 @@
 	<?=$this->form->create($item) ?>
 		<?= $this->form->field('title', ['type' => 'text', 'label' => $t('Title')]) ?>
 
-		<?= $this->form->field('published', ['type' => 'date', 'label' => $t('Publish date')]) ?>
+		<?= $this->form->field('published', [
+			'type' => 'date',
+			'label' => $t('Publish date'),
+			'value' => $item->published ?: date('Y-m-d')
+		]) ?>
 		<div class="help"><?= $t('Setting a publish date allows to pre- or post-date this item. It is used for public display.') ?></div>
 
 		<div class="media-attachment use-media-attachment-direct">
