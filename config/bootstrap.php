@@ -20,7 +20,11 @@ extract(Message::aliases());
 Panes::register('cms_post', 'posts', [
 	'title' => $t('Posts'),
 	'group' => Panes::GROUP_AUTHORING,
-	'url' => ['controller' => 'posts', 'library' => 'cms_post', 'admin' => true]
+	'url' => $base = ['controller' => 'posts', 'library' => 'cms_post', 'admin' => true],
+	'actions' => [
+		$t('List Posts') => ['action' => 'index'] + $base,
+		$t('New Post') => ['action' => 'add'] + $base
+	]
 ]);
 Media::registerDependent('cms_post\models\Posts', ['cover' => 'direct', 'media' => 'joined']);
 

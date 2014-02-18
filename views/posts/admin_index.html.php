@@ -12,10 +12,6 @@ $dateFormatter = new IntlDateFormatter(
 <article class="view-<?= $this->_config['controller'] . '-' . $this->_config['template'] ?>">
 	<h1 class="alpha"><?= $t('Posts') ?></h1>
 
-	<nav class="actions">
-		<?= $this->html->link($t('new post'), ['action' => 'add', 'library' => 'cms_post'], ['class' => 'button']) ?>
-	</nav>
-
 	<?php if ($data->count()): ?>
 		<table>
 			<thead>
