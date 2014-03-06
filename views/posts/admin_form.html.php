@@ -11,10 +11,10 @@ $this->title("{$title['title']} - {$title['object'][1]}");
 <article class="view-<?= $this->_config['controller'] . '-' . $this->_config['template'] ?>">
 	<h1 class="alpha">
 		<span class="action"><?= $title['action'] ?></span>
-		<span class="title"><?= $title['title'] ?></span>
+		<span class="title" data-untitled="<?= $t('Untitled') ?>"><?= $title['title'] ?></span>
 	</h1>
 	<?=$this->form->create($item) ?>
-		<?= $this->form->field('title', ['type' => 'text', 'label' => $t('Title')]) ?>
+		<?= $this->form->field('title', ['type' => 'text', 'label' => $t('Title'), 'class' => 'use-for-title']) ?>
 
 		<?= $this->form->field('published', [
 			'type' => 'date',
