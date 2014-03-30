@@ -14,13 +14,21 @@ namespace cms_post\controllers;
 
 class PostsController extends \cms_core\controllers\BaseController {
 
-	use \cms_core\controllers\AdminIndexTrait;
 	use \cms_core\controllers\AdminAddTrait;
 	use \cms_core\controllers\AdminEditTrait;
 	use \cms_core\controllers\AdminDeleteTrait;
 
 	use \cms_core\controllers\AdminPublishTrait;
 	use \cms_core\controllers\AdminPromoteTrait;
+
+	public function admin_index() {
+		$model = $this->_model;
+
+		$data = $model::find('all', [
+			'order' => ['published' => 'DESC']
+		]);
+		return compact('data');
+	}
 }
 
 ?>

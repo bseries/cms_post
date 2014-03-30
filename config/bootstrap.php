@@ -28,6 +28,6 @@ Panes::register('cms_post', 'posts', [
 ]);
 Media::registerDependent('cms_post\models\Posts', ['cover' => 'direct', 'media' => 'joined']);
 
-Features::register('cms_post', 'postPromotion', false);
+Features::register('cms_post', 'post.promotion', false);
 
 ?>

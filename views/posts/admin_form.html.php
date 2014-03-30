@@ -11,6 +11,7 @@ $this->title("{$title['title']} - {$title['object'][1]}");
 <article class="view-<?= $this->_config['controller'] . '-' . $this->_config['template'] ?>">
 	<h1 class="alpha">
 		<span class="action"><?= $title['action'] ?></span>
+		<span class="object"><?= $title['object'][0] ?></span>
 		<span class="title" data-untitled="<?= $t('Untitled') ?>"><?= $title['title'] ?></span>
 	</h1>
 	<?=$this->form->create($item) ?>
