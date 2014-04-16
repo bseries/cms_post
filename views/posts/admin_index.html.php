@@ -2,10 +2,15 @@
 
 use cms_core\extensions\cms\Features;
 
+$this->set([
+	'page' => [
+		'type' => 'multiple',
+		'object' => $t('posts')
+	]
+]);
+
 ?>
 <article class="view-<?= $this->_config['controller'] . '-' . $this->_config['template'] ?> use-list">
-	<h1 class="alpha"><?= $this->title($t('Posts')) ?></h1>
-
 	<?php if ($data->count()): ?>
 		<table>
 			<thead>
@@ -29,10 +34,10 @@ use cms_core\extensions\cms\Features;
 			<tbody class="list">
 				<?php foreach ($data as $item): ?>
 				<tr>
-					<td class="flag is-published"><?= ($item->is_published ? '✓' : '╳') ?>
+					<td class="flag is-published"><?= ($item->is_published ? '✓' : '×') ?>
 
 					<?php if (Features::enabled('post.promotion')): ?>
-						<td class="flag is-promoted"><?= ($item->is_promoted ? '✓' : '╳') ?>
+						<td class="flag is-promoted"><?= ($item->is_promoted ? '✓' : '×') ?>
 					<?php endif ?>
 
 					<td>
@@ -49,12 +54,12 @@ use cms_core\extensions\cms\Features;
 							<?= $this->date->format($item->created, 'date') ?>
 						</time>
 					<td class="actions">
-						<?= $this->html->link($t('delete'), ['id' => $item->id, 'action' => 'delete', 'library' => 'cms_post'], ['class' => 'button']) ?>
+						<?= $this->html->link($t('delete'), ['id' => $item->id, 'action' => 'delete', 'library' => 'cms_post'], ['class' => 'button delete']) ?>
 						<?php if (Features::enabled('post.promotion')): ?>
 							<?= $this->html->link($item->is_promoted ? $t('unpromote') : $t('promote'), ['id' => $item->id, 'action' => $item->is_promoted ? 'unpromote': 'promote', 'library' => 'cms_post'], ['class' => 'button']) ?>
 						<?php endif ?>
 						<?= $this->html->link($item->is_published ? $t('unpublish') : $t('publish'), ['id' => $item->id, 'action' => $item->is_published ? 'unpublish': 'publish', 'library' => 'cms_post'], ['class' => 'button']) ?>
-						<?= $this->html->link($t('edit'), ['id' => $item->id, 'action' => 'edit', 'library' => 'cms_post'], ['class' => 'button']) ?>
+						<?= $this->html->link($t('open'), ['id' => $item->id, 'action' => 'edit', 'library' => 'cms_post'], ['class' => 'button']) ?>
 				<?php endforeach ?>
 			</tbody>
 		</table>
