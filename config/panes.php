@@ -15,14 +15,10 @@ use lithium\g11n\Message;
 
 extract(Message::aliases());
 
-Panes::register('cms_post', 'posts', [
-	'title' => $t('Posts'),
-	'group' => Panes::GROUP_AUTHORING,
-	'url' => $base = ['controller' => 'posts', 'library' => 'cms_post', 'admin' => true],
-	'actions' => [
-		$t('List Posts') => ['action' => 'index'] + $base,
-		$t('New Post') => ['action' => 'add'] + $base
-	]
+$base = ['controller' => 'posts', 'library' => 'cms_post', 'admin' => true];
+Panes::registerActions('cms_post', 'authoring', [
+	$t('List Posts') => ['action' => 'index'] + $base,
+	$t('New Post') => ['action' => 'add'] + $base
 ]);
 
 ?>
