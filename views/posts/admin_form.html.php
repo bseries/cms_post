@@ -32,6 +32,11 @@ $this->set([
 
 				<?= $this->form->field('tags', ['value' => $item->tags(), 'label' => $t('Tags'), 'placeholder' => 'foo, bar']) ?>
 				<div class="help"><?= $t('Separate multiple tags with commas.') ?></div>
+
+				<?= $this->form->field('source', [
+					'type' => 'text',
+					'label' => $t('Source')
+				]) ?>
 			</div>
 		</div>
 		<div class="grid-row">
