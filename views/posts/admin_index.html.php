@@ -42,7 +42,7 @@ $this->set([
 
 					<td>
 						<?php if ($cover = $item->cover()): ?>
-							<?= $this->media->image($cover->version('fix3')->url('http'), ['class' => 'media']) ?>
+							<?= $this->media->image($cover->version('fix3admin')->url('http'), ['class' => 'media']) ?>
 						<?php endif ?>
 					<td class="emphasize title"><?= $item->title ?>
 					<td class="date published">
