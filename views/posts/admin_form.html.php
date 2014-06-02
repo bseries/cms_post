@@ -86,7 +86,9 @@ $this->set([
 			<?php if (Features::enabled('post.promotion')): ?>
 				<?= $this->html->link($item->is_promoted ? $t('unpromote') : $t('promote'), ['id' => $item->id, 'action' => $item->is_promoted ? 'unpromote': 'promote', 'library' => 'cms_post'], ['class' => 'button large']) ?>
 			<?php endif ?>
-			<?= $this->html->link($item->is_published ? $t('unpublish') : $t('publish'), ['id' => $item->id, 'action' => $item->is_published ? 'unpublish': 'publish', 'library' => 'cms_post'], ['class' => 'button large']) ?>
+			<?php if ($item->exists()): ?>
+				<?= $this->html->link($item->is_published ? $t('unpublish') : $t('publish'), ['id' => $item->id, 'action' => $item->is_published ? 'unpublish': 'publish', 'library' => 'cms_post'], ['class' => 'button large']) ?>
+			<?php endif ?>
 			<?= $this->form->button($t('save'), ['type' => 'submit', 'class' => 'button large save']) ?>
 		</div>
 	<?=$this->form->end() ?>
