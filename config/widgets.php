@@ -1,6 +1,6 @@
 <?php
 /**
- * Bureau Post
+ * Bureau Media
  *
  * Copyright (c) 2013-2014 Atelier Disko - All rights reserved.
  *
@@ -10,9 +10,21 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  */
 
-require 'settings.php';
-require 'media.php';
-require 'panes.php';
-require 'widgets.php';
+use lithium\g11n\Message;
+use cms_core\extensions\cms\Widgets;
+use cms_post\models\Posts;
+
+extract(Message::aliases());
+
+Widgets::register('cms_post', 'authoring',  function() use ($t) {
+	return [
+		'data' => [
+			$t('Posts') => Posts::find('count')
+		]
+	];
+}, [
+	'type' => Widgets::TYPE_TABLE,
+	'group' => Widgets::GROUP_DASHBOARD
+]);
 
 ?>
