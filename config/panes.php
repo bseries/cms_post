@@ -15,10 +15,9 @@ use lithium\g11n\Message;
 
 extract(Message::aliases());
 
-$base = ['controller' => 'posts', 'library' => 'cms_post', 'admin' => true];
-Panes::registerActions('cms_post', 'authoring', [
-	$t('List Posts') => ['action' => 'index'] + $base,
-	$t('New Post') => ['action' => 'add'] + $base
+Panes::register('authoring.posts', [
+	'title' => $t('Posts'),
+	'url' => ['controller' => 'posts', 'action' => 'index', 'library' => 'cms_post', 'admin' => true]
 ]);
 
 ?>
