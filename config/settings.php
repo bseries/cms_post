@@ -12,6 +12,6 @@
 
 use cms_core\extensions\cms\Features;
 
-Features::register('cms_post', 'post.promotion', false);
+Features::register('post.promotion', false);
 
 ?>
