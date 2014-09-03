@@ -16,7 +16,7 @@ use cms_post\models\Posts;
 
 extract(Message::aliases());
 
-Widgets::register('cms_post', 'authoring',  function() use ($t) {
+Widgets::register('authoring',  function() use ($t) {
 	return [
 		'data' => [
 			$t('Posts') => Posts::find('count')
@@ -24,7 +24,8 @@ Widgets::register('cms_post', 'authoring',  function() use ($t) {
 	];
 }, [
 	'type' => Widgets::TYPE_TABLE,
-	'group' => Widgets::GROUP_DASHBOARD
+	'group' => Widgets::GROUP_DASHBOARD,
+	'weight' => Widgets::WEIGHT_HIGH
 ]);
 
 ?>
