@@ -1,6 +1,6 @@
 <?php
 /**
- * Bureau Post
+ * CMS Post
  *
  * Copyright (c) 2013-2014 Atelier Disko - All rights reserved.
  *
@@ -15,17 +15,17 @@ namespace cms_post\models;
 use lithium\util\Validator;
 use DateTime;
 
-class Posts extends \cms_core\models\Base {
+class Posts extends \base_core\models\Base {
 
 	public $belongsTo = [
 		'CoverMedia' => [
-			'to' => 'cms_media\models\Media',
+			'to' => 'base_media\models\Media',
 			'key' => 'cover_media_id'
 		]
 	];
 
 	protected static $_actsAs = [
-		'cms_media\extensions\data\behavior\Coupler' => [
+		'base_media\extensions\data\behavior\Coupler' => [
 			'bindings' => [
 				'cover' => [
 					'type' => 'direct',
@@ -33,11 +33,11 @@ class Posts extends \cms_core\models\Base {
 				],
 				'media' => [
 					'type' => 'joined',
-					'to' => 'cms_media\models\MediaAttachments'
+					'to' => 'base_media\models\MediaAttachments'
 				]
 			]
 		],
-		'cms_core\extensions\data\behavior\Timestamp',
+		'base_core\extensions\data\behavior\Timestamp',
 		'li3_taggable\extensions\data\behavior\Taggable' => [
 			'field' => 'tags',
 			'tagModel' => false,

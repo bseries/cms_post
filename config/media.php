@@ -1,6 +1,6 @@
 <?php
 /**
- * Bureau Post
+ * CMS Post
  *
  * Copyright (c) 2013-2014 Atelier Disko - All rights reserved.
  *
@@ -10,7 +10,7 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  */
 
-use cms_media\models\Media;
+use base_media\models\Media;
 
 Media::registerDependent('cms_post\models\Posts', ['cover' => 'direct', 'media' => 'joined']);
 

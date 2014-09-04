@@ -1,6 +1,6 @@
 <?php
 /**
- * Bureau Post
+ * CMS Post
  *
  * Copyright (c) 2013-2014 Atelier Disko - All rights reserved.
  *
@@ -12,14 +12,14 @@
 
 namespace cms_post\controllers;
 
-class PostsController extends \cms_core\controllers\BaseController {
+class PostsController extends \base_core\controllers\BaseController {
 
-	use \cms_core\controllers\AdminAddTrait;
-	use \cms_core\controllers\AdminEditTrait;
-	use \cms_core\controllers\AdminDeleteTrait;
+	use \base_core\controllers\AdminAddTrait;
+	use \base_core\controllers\AdminEditTrait;
+	use \base_core\controllers\AdminDeleteTrait;
 
-	use \cms_core\controllers\AdminPublishTrait;
-	use \cms_core\controllers\AdminPromoteTrait;
+	use \base_core\controllers\AdminPublishTrait;
+	use \base_core\controllers\AdminPromoteTrait;
 
 	public function admin_index() {
 		$model = $this->_model;
