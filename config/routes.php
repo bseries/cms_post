@@ -14,14 +14,14 @@ use lithium\net\http\Router;
 
 $persist = ['persist' => ['admin', 'controller']];
 
-Router::connect('/admin/posts/{:id:[0-9]+}', array(
+Router::connect('/admin/posts/{:id:[0-9]+}', [
 	'controller' => 'posts', 'library' => 'cms_post', 'action' => 'view', 'admin' => true
-), $persist);
-Router::connect('/admin/posts/{:action}', array(
+], $persist);
+Router::connect('/admin/posts/{:action}', [
 	'controller' => 'posts', 'library' => 'cms_post', 'admin' => true
-), $persist);
-Router::connect('/admin/posts/{:action}/{:id:[0-9]+}', array(
+], $persist);
+Router::connect('/admin/posts/{:action}/{:id:[0-9]+}', [
 	'controller' => 'posts', 'library' => 'cms_post', 'admin' => true
-), $persist);
+], $persist);
 
 ?>
