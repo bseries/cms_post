@@ -11,7 +11,10 @@
  */
 
 use base_core\extensions\cms\Features;
+use base_tag\models\Tags;
 
 Features::register('post.promotion', false);
+
+Tags::registerDepdendent('cms_post\models\Posts');
 
 ?>
