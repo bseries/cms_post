@@ -15,4 +15,8 @@ require 'media.php';
 require 'panes.php';
 require 'widgets.php';
 
+use base_tag\models\Tags;
+
+Tags::registerDependent('cms_post\models\Posts');
+
 ?>
