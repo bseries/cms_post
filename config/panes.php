@@ -17,7 +17,8 @@ extract(Message::aliases());
 
 Panes::register('authoring.posts', [
 	'title' => $t('Posts'),
-	'url' => ['controller' => 'posts', 'action' => 'index', 'library' => 'cms_post', 'admin' => true]
+	'url' => ['controller' => 'posts', 'action' => 'index', 'library' => 'cms_post', 'admin' => true],
+	'weight' => 40
 ]);
 
 ?>
