@@ -74,7 +74,7 @@ $this->set([
 			</div>
 		</div>
 
-		<div class="grid-row grid-row-last">
+		<div class="grid-row">
 			<?= $this->form->field('body', [
 				'type' => 'textarea',
 				'label' => $t('Content'),
