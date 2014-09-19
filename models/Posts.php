@@ -17,6 +17,8 @@ use DateTime;
 
 class Posts extends \base_core\models\Base {
 
+	use \base_core\models\SlugTrait;
+
 	public $belongsTo = [
 		'CoverMedia' => [
 			'to' => 'base_media\models\Media',
