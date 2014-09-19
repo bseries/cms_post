@@ -42,6 +42,11 @@ class Posts extends \base_core\models\Base {
 			'field' => 'tags',
 			'tagModel' => false,
 			'filters' => ['strtolower']
+		],
+		'base_core\extensions\data\behavior\Serializable' => [
+			'fields' => [
+				'authors' => ','
+			]
 		]
 	];
 

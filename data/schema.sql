@@ -1,6 +1,7 @@
 CREATE TABLE `posts` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `cover_media_id` int(11) NOT NULL,
+  `authors` varchar(250) DEFAULT NULL,
   `title` varchar(250) NOT NULL DEFAULT '',
   `teaser` text,
   `body` text NOT NULL,
@@ -15,4 +16,4 @@ CREATE TABLE `posts` (
   KEY `is_published` (`is_published`),
   KEY `is_promoted` (`is_promoted`),
   KEY `published` (`published`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

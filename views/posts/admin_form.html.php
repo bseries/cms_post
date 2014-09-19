@@ -1,6 +1,7 @@
 <?php
 
 use base_core\extensions\cms\Features;
+use lithium\security\Auth;
 
 $this->set([
 	'page' => [
@@ -15,12 +16,20 @@ $this->set([
 	]
 ]);
 
+$user = Auth::check('default');
+
 ?>
 <article class="view-<?= $this->_config['controller'] . '-' . $this->_config['template'] ?>">
 	<?=$this->form->create($item) ?>
 		<div class="grid-row">
 			<div class="grid-column-left">
 				<?= $this->form->field('title', ['type' => 'text', 'label' => $t('Title'), 'class' => 'use-for-title']) ?>
+				<?= $this->form->field('authors', [
+					'type' => 'text',
+					'label' => $t('Author/s'),
+					'value' => $item->authors(['serialized' => true]) ?: $user['name']
+				]) ?>
+				<div class="help"><?= $t('Separate multiple authors with commas.') ?></div>
 			</div>
 			<div class="grid-column-right">
 				<?= $this->form->field('published', [
