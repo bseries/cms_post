@@ -1,6 +1,6 @@
 <?php
 
-use base_core\extensions\cms\Features;
+use base_core\extensions\cms\Settings;
 use lithium\security\Auth;
 
 $this->set([
@@ -92,7 +92,7 @@ $user = Auth::check('default');
 		</div>
 
 		<div class="bottom-actions">
-			<?php if (Features::enabled('post.promotion')): ?>
+			<?php if (Settings::read('post.usePromotion')): ?>
 				<?= $this->html->link($item->is_promoted ? $t('unpromote') : $t('promote'), ['id' => $item->id, 'action' => $item->is_promoted ? 'unpromote': 'promote', 'library' => 'cms_post'], ['class' => 'button large']) ?>
 			<?php endif ?>
 			<?php if ($item->exists()): ?>

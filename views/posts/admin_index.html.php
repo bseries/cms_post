@@ -1,6 +1,6 @@
 <?php
 
-use base_core\extensions\cms\Features;
+use base_core\extensions\cms\Settings;
 
 $this->set([
 	'page' => [
@@ -21,7 +21,7 @@ $this->set([
 			<thead>
 				<tr>
 					<td data-sort="is-published" class="flag is-published list-sort"><?= $t('publ.?') ?>
-					<?php if (Features::enabled('post.promotion')): ?>
+					<?php if (Settings::read('post.usePromotion')): ?>
 						<td data-sort="is-promoted" class="flag is-promoted list-sort"><?= $t('prom.?') ?>
 					<?php endif ?>
 					<td>
@@ -41,7 +41,7 @@ $this->set([
 				<tr>
 					<td class="flag is-published"><?= ($item->is_published ? '✓' : '×') ?>
 
-					<?php if (Features::enabled('post.promotion')): ?>
+					<?php if (Settings::read('post.usePromotion')): ?>
 						<td class="flag is-promoted"><?= ($item->is_promoted ? '✓' : '×') ?>
 					<?php endif ?>
 
@@ -60,7 +60,7 @@ $this->set([
 						</time>
 					<td class="actions">
 						<?= $this->html->link($t('delete'), ['id' => $item->id, 'action' => 'delete', 'library' => 'cms_post'], ['class' => 'button delete']) ?>
-						<?php if (Features::enabled('post.promotion')): ?>
+						<?php if (Settings::read('post.usePromotion')): ?>
 							<?= $this->html->link($item->is_promoted ? $t('unpromote') : $t('promote'), ['id' => $item->id, 'action' => $item->is_promoted ? 'unpromote': 'promote', 'library' => 'cms_post'], ['class' => 'button']) ?>
 						<?php endif ?>
 						<?= $this->html->link($item->is_published ? $t('unpublish') : $t('publish'), ['id' => $item->id, 'action' => $item->is_published ? 'unpublish': 'publish', 'library' => 'cms_post'], ['class' => 'button']) ?>
