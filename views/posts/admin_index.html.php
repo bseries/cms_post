@@ -24,7 +24,7 @@ $this->set([
 					<?php if (Settings::read('post.usePromotion')): ?>
 						<td data-sort="is-promoted" class="flag is-promoted list-sort"><?= $t('prom.?') ?>
 					<?php endif ?>
-					<td>
+					<td class="media">
 					<td data-sort="title" class="emphasize title list-sort"><?= $t('Title') ?>
 					<td data-sort="published" class="date published list-sort desc"><?= $t('Pubdate') ?>
 					<td data-sort="created" class="date created list-sort"><?= $t('Created') ?>
@@ -45,9 +45,11 @@ $this->set([
 						<td class="flag is-promoted"><?= ($item->is_promoted ? '✓' : '×') ?>
 					<?php endif ?>
 
-					<td>
+					<td class="media">
 						<?php if ($cover = $item->cover()): ?>
-							<?= $this->media->image($cover->version('fix3admin')->url('http'), ['class' => 'media']) ?>
+							<?= $this->media->image($cover->version('fix3admin'), [
+								'data-media-id' => $cover->id, 'alt' => 'preview'
+							]) ?>
 						<?php endif ?>
 					<td class="emphasize title"><?= $item->title ?>
 					<td class="date published">
