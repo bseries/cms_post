@@ -87,7 +87,7 @@ $user = Auth::check('default');
 			<?= $this->form->field('body', [
 				'type' => 'textarea',
 				'label' => $t('Content'),
-				'wrap' => ['class' => 'body use-editor editor-basic editor-headline editor-size editor-line editor-link editor-list editor-media editor-page-break']
+				'wrap' => ['class' => 'body use-editor editor-basic editor-headline editor-size editor-line editor-link editor-list editor-media']
 			]) ?>
 		</div>
 
