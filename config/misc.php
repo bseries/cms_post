@@ -10,11 +10,6 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  */
 
-require 'settings.php';
-require 'media.php';
-require 'panes.php';
-require 'widgets.php';
-
 use base_tag\models\Tags;
 
 Tags::registerDependent('cms_post\models\Posts');
