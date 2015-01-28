@@ -10,31 +10,33 @@ $this->set([
 ]);
 
 ?>
-<article class="view-<?= $this->_config['controller'] . '-' . $this->_config['template'] ?> use-list">
+<article
+	class="use-index-table"
+	data-endpoint-sort="<?= $this->url([
+		'action' => 'index',
+		'page' => $paginator->getPages()->current,
+		'orderField' => '__ORDER_FIELD__',
+		'orderDirection' => '__ORDER_DIRECTION__'
+	]) ?>"
+>
 
 	<div class="top-actions">
-		<?= $this->html->link($t('new post'), ['action' => 'add', 'library' => 'cms_post'], ['class' => 'button add']) ?>
+		<?= $this->html->link($t('new post'), ['action' => 'add'], ['class' => 'button add']) ?>
 	</div>
 
 	<?php if ($data->count()): ?>
 		<table>
 			<thead>
 				<tr>
-					<td data-sort="is-published" class="flag is-published list-sort"><?= $t('publ.?') ?>
+					<td data-sort="is-published" class="flag is-published table-sort"><?= $t('publ.?') ?>
 					<?php if (Settings::read('post.usePromotion')): ?>
-						<td data-sort="is-promoted" class="flag is-promoted list-sort"><?= $t('prom.?') ?>
+						<td data-sort="is-promoted" class="flag is-promoted table-sort"><?= $t('prom.?') ?>
 					<?php endif ?>
 					<td class="media">
-					<td data-sort="title" class="emphasize title list-sort"><?= $t('Title') ?>
-					<td data-sort="published" class="date published list-sort desc"><?= $t('Pubdate') ?>
-					<td data-sort="created" class="date created list-sort"><?= $t('Created') ?>
+					<td data-sort="title" class="emphasize title table-sort"><?= $t('Title') ?>
+					<td data-sort="published" class="date published table-sort desc"><?= $t('Pubdate') ?>
+					<td data-sort="modified" class="date modified table-sort"><?= $t('Modified') ?>
 					<td class="actions">
-						<?= $this->form->field('search', [
-							'type' => 'search',
-							'label' => false,
-							'placeholder' => $t('Filter'),
-							'class' => 'list-search'
-						]) ?>
 			</thead>
 			<tbody class="list">
 				<?php foreach ($data as $item): ?>
@@ -56,9 +58,9 @@ $this->set([
 						<time datetime="<?= $this->date->format($item->published, 'w3c') ?>">
 							<?= $this->date->format($item->published, 'date') ?>
 						</time>
-					<td class="date created">
-						<time datetime="<?= $this->date->format($item->created, 'w3c') ?>">
-							<?= $this->date->format($item->created, 'date') ?>
+					<td class="date modified">
+						<time datetime="<?= $this->date->format($item->modified, 'w3c') ?>">
+							<?= $this->date->format($item->modified, 'date') ?>
 						</time>
 					<td class="actions">
 						<?= $this->html->link($t('delete'), ['id' => $item->id, 'action' => 'delete', 'library' => 'cms_post'], ['class' => 'button delete']) ?>
@@ -73,4 +75,6 @@ $this->set([
 	<?php else: ?>
 		<div class="none-available"><?= $t('No items available, yet.') ?></div>
 	<?php endif ?>
+
+	<?=$this->view()->render(['element' => 'paging'], compact('paginator'), ['library' => 'base_core']) ?>
 </article>
