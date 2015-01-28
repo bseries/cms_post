@@ -34,8 +34,8 @@ $this->set([
 					<?php endif ?>
 					<td class="media">
 					<td data-sort="title" class="emphasize title table-sort"><?= $t('Title') ?>
-					<td data-sort="published" class="date published table-sort desc"><?= $t('Pubdate') ?>
-					<td data-sort="modified" class="date modified table-sort"><?= $t('Modified') ?>
+					<td data-sort="published" class="date published table-sort"><?= $t('Pubdate') ?>
+					<td data-sort="modified" class="date modified table-sort desc"><?= $t('Modified') ?>
 					<td class="actions">
 			</thead>
 			<tbody class="list">
