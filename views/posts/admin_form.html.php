@@ -3,6 +3,10 @@
 use base_core\extensions\cms\Settings;
 use lithium\security\Auth;
 
+$t = function($id) use ($t) {
+	return $t($id, ['scope' => 'cms_post']);
+};
+
 $this->set([
 	'page' => [
 		'type' => 'single',

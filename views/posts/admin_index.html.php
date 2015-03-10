@@ -2,6 +2,10 @@
 
 use base_core\extensions\cms\Settings;
 
+$t = function($id) use ($t) {
+	return $t($id, ['scope' => 'cms_post']);
+};
+
 $this->set([
 	'page' => [
 		'type' => 'multiple',
