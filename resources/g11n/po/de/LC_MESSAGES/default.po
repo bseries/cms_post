@@ -1,0 +1,1592 @@
+# English translations for cms_post package.
+# Copyright (C) 2015 Atelier Disko
+# This file is distributed under the same license as the cms_post package.
+# Automatically generated, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cms_post 1.0\n"
+"Report-Msgid-Bugs-To: info@atelierdisko.de\n"
+"POT-Creation-Date: 2015-03-10 12:03+0100\n"
+"PO-Revision-Date: 2015-03-10 12:02+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: config/panes.php:19 config/widgets.php:22
+msgid "Posts"
+msgstr "Posts"
+
+#: views/posts/admin_form.html.php:10
+msgid "untitled"
+msgstr "untitled"
+
+#: views/posts/admin_form.html.php:11
+msgid "post"
+msgstr "post"
+
+#: views/posts/admin_form.html.php:14
+msgid "published"
+msgstr "published"
+
+#: views/posts/admin_form.html.php:14
+msgid "unpublished"
+msgstr "unpublished"
+
+#: views/posts/admin_form.html.php:15
+msgid "promoted"
+msgstr "promoted"
+
+#: views/posts/admin_form.html.php:15
+msgid "unpromoted"
+msgstr "unpromoted"
+
+#: views/posts/admin_form.html.php:26 views/posts/admin_index.html.php:36
+msgid "Title"
+msgstr "Title"
+
+#: views/posts/admin_form.html.php:29
+msgid "Author/s"
+msgstr "Author/s"
+
+#: views/posts/admin_form.html.php:32
+msgid "Separate multiple authors with commas."
+msgstr "Separate multiple authors with commas."
+
+#: views/posts/admin_form.html.php:37
+msgid "Publish date"
+msgstr "Publish date"
+
+#: views/posts/admin_form.html.php:40
+msgid ""
+"Setting a publish date allows to pre- or post-date this item. It is used for "
+"public display."
+msgstr ""
+"Setting a publish date allows to pre- or post-date this item. It is used for "
+"public display."
+
+#: views/posts/admin_form.html.php:42
+msgid "Tags"
+msgstr "Tags"
+
+#: views/posts/admin_form.html.php:43
+msgid "Separate multiple tags with commas."
+msgstr "Separate multiple tags with commas."
+
+#: views/posts/admin_form.html.php:47
+msgid "Source"
+msgstr "Source"
+
+#: views/posts/admin_form.html.php:54
+msgid "Cover"
+msgstr "Cover"
+
+#: views/posts/admin_form.html.php:57 views/posts/admin_form.html.php:68
+msgid "select"
+msgstr "select"
+
+#: views/posts/admin_form.html.php:62
+msgid "Media"
+msgstr "Media"
+
+#: views/posts/admin_form.html.php:77
+msgid "Teaser"
+msgstr "Teaser"
+
+#: views/posts/admin_form.html.php:89
+msgid "Content"
+msgstr "Content"
+
+#: views/posts/admin_form.html.php:96 views/posts/admin_index.html.php:68
+msgid "promote"
+msgstr "promote"
+
+#: views/posts/admin_form.html.php:96 views/posts/admin_index.html.php:68
+msgid "unpromote"
+msgstr "unpromote"
+
+#: views/posts/admin_form.html.php:99 views/posts/admin_index.html.php:70
+msgid "publish"
+msgstr "publish"
+
+#: views/posts/admin_form.html.php:99 views/posts/admin_index.html.php:70
+msgid "unpublish"
+msgstr "unpublish"
+
+#: views/posts/admin_form.html.php:101
+msgid "save"
+msgstr "save"
+
+#: views/posts/admin_index.html.php:8
+msgid "posts"
+msgstr "posts"
+
+#: views/posts/admin_index.html.php:24
+msgid "new post"
+msgstr "new post"
+
+#: views/posts/admin_index.html.php:31
+msgid "publ.?"
+msgstr "publ.?"
+
+#: views/posts/admin_index.html.php:33
+msgid "prom.?"
+msgstr "prom.?"
+
+#: views/posts/admin_index.html.php:37
+msgid "Pubdate"
+msgstr "Pubdate"
+
+#: views/posts/admin_index.html.php:38
+msgid "Modified"
+msgstr "Modified"
+
+#: views/posts/admin_index.html.php:66
+msgid "delete"
+msgstr "delete"
+
+#: views/posts/admin_index.html.php:71
+msgid "open"
+msgstr "open"
+
+#: views/posts/admin_index.html.php:76
+msgid "No items available, yet."
+msgstr "No items available, yet."
+
+#~ msgid "Addresses"
+#~ msgstr "Addresses"
+
+#~ msgid "This field cannot be empty."
+#~ msgstr "This field cannot be empty."
+
+#~ msgid "Missing street number."
+#~ msgstr "Missing street number."
+
+#~ msgid "A country must be selected."
+#~ msgstr "A country must be selected."
+
+#~ msgid "Invalid country."
+#~ msgstr "Invalid country."
+
+#~ msgid "The field is not correctly formatted."
+#~ msgstr "The field is not correctly formatted."
+
+#~ msgid "address"
+#~ msgstr "address"
+
+#~ msgid "Recipient"
+#~ msgstr "Recipient"
+
+#~ msgid "Organization"
+#~ msgstr "Organization"
+
+#~ msgid "User"
+#~ msgstr "User"
+
+#~ msgid "real user"
+#~ msgstr "real user"
+
+#~ msgid "Phone"
+#~ msgstr "Phone"
+
+#~ msgid "Address Line"
+#~ msgstr "Address Line"
+
+#~ msgid "Address Line (additional)"
+#~ msgstr "Address Line (additional)"
+
+#~ msgid "Locality"
+#~ msgstr "Locality"
+
+#~ msgid "Dependent Locality"
+#~ msgstr "Dependent Locality"
+
+#~ msgid "Postal Code"
+#~ msgstr "Postal Code"
+
+#~ msgid "Sorting Code"
+#~ msgstr "Sorting Code"
+
+#~ msgid "Administrative Area"
+#~ msgstr "Administrative Area"
+
+#~ msgid "Country"
+#~ msgstr "Country"
+
+#~ msgid "addresses"
+#~ msgstr "addresses"
+
+#~ msgid "new address"
+#~ msgstr "new address"
+
+#~ msgid ""
+#~ "Addresses can be owned by a user but addresses without an owner are "
+#~ "possible, too."
+#~ msgstr ""
+#~ "Addresses can be owned by a user but addresses without an owner are "
+#~ "possible, too."
+
+#~ msgid "Address"
+#~ msgstr "Address"
+
+#~ msgid "Dashboard"
+#~ msgstr "Dashboard"
+
+#~ msgid "Access"
+#~ msgstr "Access"
+
+#~ msgid "External"
+#~ msgstr "External"
+
+#~ msgid "Authoring"
+#~ msgstr "Authoring"
+
+#~ msgid "Site"
+#~ msgstr "Site"
+
+#~ msgid "Users"
+#~ msgstr "Users"
+
+#~ msgid "Virtual Users"
+#~ msgstr "Virtual Users"
+
+#~ msgid "Contact Support"
+#~ msgstr "Contact Support"
+
+#~ msgid "Total"
+#~ msgstr "Total"
+
+#~ msgid "Activated."
+#~ msgstr "Activated."
+
+#~ msgid "Failed to activate."
+#~ msgstr "Failed to activate."
+
+#~ msgid "Deactivated."
+#~ msgstr "Deactivated."
+
+#~ msgid "Failed to deactivate."
+#~ msgstr "Failed to deactivate."
+
+#~ msgid "Successfully saved."
+#~ msgstr "Successfully saved."
+
+#~ msgid "Failed to save."
+#~ msgstr "Failed to save."
+
+#~ msgid "Successfully deleted."
+#~ msgstr "Successfully deleted."
+
+#~ msgid "Failed to delete."
+#~ msgstr "Failed to delete."
+
+#~ msgid "Successfully locked."
+#~ msgstr "Successfully locked."
+
+#~ msgid "Failed to lock."
+#~ msgstr "Failed to lock."
+
+#~ msgid "Successfully unlocked."
+#~ msgstr "Successfully unlocked."
+
+#~ msgid "Failed to unlock."
+#~ msgstr "Failed to unlock."
+
+#~ msgid "Successfully updated order."
+#~ msgstr "Successfully updated order."
+
+#~ msgid "Failed to update order."
+#~ msgstr "Failed to update order."
+
+#~ msgid "Successfully promoted."
+#~ msgstr "Successfully promoted."
+
+#~ msgid "Failed to promote."
+#~ msgstr "Failed to promote."
+
+#~ msgid "Successfully unpromoted."
+#~ msgstr "Successfully unpromoted."
+
+#~ msgid "Failed to unpromote."
+#~ msgstr "Failed to unpromote."
+
+#~ msgid "Successfully published."
+#~ msgstr "Successfully published."
+
+#~ msgid "Failed to publish."
+#~ msgstr "Failed to publish."
+
+#~ msgid "Successfully unpublished."
+#~ msgstr "Successfully unpublished."
+
+#~ msgid "Failed to unpublish."
+#~ msgstr "Failed to unpublish."
+
+#~ msgid "Successfully updated status."
+#~ msgstr "Successfully updated status."
+
+#~ msgid "Failed to update status."
+#~ msgstr "Failed to update status."
+
+#~ msgid "no address"
+#~ msgstr "no address"
+
+#~ msgid "Authenticated."
+#~ msgstr "Authenticated."
+
+#~ msgid "Failed to authenticate."
+#~ msgstr "Failed to authenticate."
+
+#~ msgid "Successfully logged out."
+#~ msgstr "Successfully logged out."
+
+#~ msgid "Your account has been activated."
+#~ msgstr "Your account has been activated."
+
+#~ msgid "Became user `{:name}`."
+#~ msgstr "Became user `{:name}`."
+
+#~ msgid "Became user `{:name}` again."
+#~ msgstr "Became user `{:name}` again."
+
+#~ msgid "The passwords are not identical."
+#~ msgstr "The passwords are not identical."
+
+#~ msgid "Invalid e–mail."
+#~ msgstr "Invalid e–mail."
+
+#~ msgid "The e–mail is already in use."
+#~ msgstr "The e–mail is already in use."
+
+#~ msgid "E–Mail"
+#~ msgstr "E–Mail"
+
+#~ msgid "Website"
+#~ msgstr "Website"
+
+#~ msgid "All rights reserved."
+#~ msgstr "All rights reserved."
+
+#~ msgid "Forbidden"
+#~ msgstr "Forbidden"
+
+#~ msgid "You are not allowed to access this page."
+#~ msgstr "You are not allowed to access this page."
+
+#~ msgid "You are not logged in."
+#~ msgstr "You are not logged in."
+
+#~ msgid "You don't have the required privileges."
+#~ msgstr "You don't have the required privileges."
+
+#~ msgid "Go to the frontpage at <strong>{:url}</strong>."
+#~ msgstr "Go to the frontpage at <strong>{:url}</strong>."
+
+#~ msgid "Not Found"
+#~ msgstr "Not Found"
+
+#~ msgid ""
+#~ "You've followed a link from within the site. That links seems to be "
+#~ "incorrectly setup."
+#~ msgstr ""
+#~ "You've followed a link from within the site. That links seems to be "
+#~ "incorrectly setup."
+
+#~ msgid ""
+#~ "You did a search on <strong>{:searchReferal}</strong> for <em>{:"
+#~ "searchTerms}</em>. However their search index appears to be partially out "
+#~ "of date."
+#~ msgstr ""
+#~ "You did a search on <strong>{:searchReferal}</strong> for <em>{:"
+#~ "searchTerms}</em>. However their search index appears to be partially out "
+#~ "of date."
+
+#~ msgid ""
+#~ "If you've followed a link from somewhere the link may be out of date."
+#~ msgstr ""
+#~ "If you've followed a link from somewhere the link may be out of date."
+
+#~ msgid "If you typed in the address, it might have been misspelled."
+#~ msgstr "If you typed in the address, it might have been misspelled."
+
+#~ msgid "If you've bookmarked this page the link may be out of date."
+#~ msgstr "If you've bookmarked this page the link may be out of date."
+
+#~ msgid ""
+#~ "The administrator of this site has been notified and will fix the link as "
+#~ "soon as possible."
+#~ msgstr ""
+#~ "The administrator of this site has been notified and will fix the link as "
+#~ "soon as possible."
+
+#~ msgid ""
+#~ "Go back to the previous page which sent you here <strong>{:url}</strong>."
+#~ msgstr ""
+#~ "Go back to the previous page which sent you here <strong>{:url}</strong>."
+
+#~ msgid "Double-check the spelling of the address."
+#~ msgstr "Double-check the spelling of the address."
+
+#~ msgid "Update your bookmark."
+#~ msgstr "Update your bookmark."
+
+#~ msgid "Internal Server Error"
+#~ msgstr "Internal Server Error"
+
+#~ msgid "An unexpected technical problem occurred."
+#~ msgstr "An unexpected technical problem occurred."
+
+#~ msgid "Service Unavailable"
+#~ msgstr "Service Unavailable"
+
+#~ msgid "The service is currently offline and will be back online soon."
+#~ msgstr "The service is currently offline and will be back online soon."
+
+#~ msgid "Refresh this page after a few minutes."
+#~ msgstr "Refresh this page after a few minutes."
+
+#~ msgid "Unsupported Browser"
+#~ msgstr "Unsupported Browser"
+
+#~ msgid "Your browser is too old to be used with this site."
+#~ msgstr "Your browser is too old to be used with this site."
+
+#~ msgid "Install a more recent browser."
+#~ msgstr "Install a more recent browser."
+
+#~ msgid "Maintenance"
+#~ msgstr "Maintenance"
+
+#~ msgid ""
+#~ "Some changes are made to the infrastructure and certain pages may be "
+#~ "unavailable for a few minutes."
+#~ msgstr ""
+#~ "Some changes are made to the infrastructure and certain pages may be "
+#~ "unavailable for a few minutes."
+
+#~ msgid ""
+#~ "Maintenance is expected to be completed within a maximum of <strong>{:"
+#~ "duration} minutes</strong>."
+#~ msgstr ""
+#~ "Maintenance is expected to be completed within a maximum of <strong>{:"
+#~ "duration} minutes</strong>."
+
+#~ msgid "creating"
+#~ msgstr "creating"
+
+#~ msgid "editing"
+#~ msgstr "editing"
+
+#~ msgid "listing"
+#~ msgstr "listing"
+
+#~ msgid "Moin {:name}!"
+#~ msgstr "Moin {:name}!"
+
+#~ msgid "actually"
+#~ msgstr "actually"
+
+#~ msgid "Logout"
+#~ msgstr "Logout"
+
+#~ msgid "Debecome"
+#~ msgstr "Debecome"
+
+#~ msgid "Support"
+#~ msgstr "Support"
+
+#~ msgid "unnamed"
+#~ msgstr "unnamed"
+
+#~ msgid "user"
+#~ msgstr "user"
+
+#~ msgid "activated"
+#~ msgstr "activated"
+
+#~ msgid "deactivated"
+#~ msgstr "deactivated"
+
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgid "Number"
+#~ msgstr "Number"
+
+#~ msgid "Leave empty to autogenerate number."
+#~ msgstr "Leave empty to autogenerate number."
+
+#~ msgid "E–mail"
+#~ msgstr "E–mail"
+
+#~ msgid "receives notifications"
+#~ msgstr "receives notifications"
+
+#~ msgid "Locale"
+#~ msgstr "Locale"
+
+#~ msgid "Timezone"
+#~ msgstr "Timezone"
+
+#~ msgid "Security"
+#~ msgstr "Security"
+
+#~ msgid "Keep empty to leave password unchanged."
+#~ msgstr "Keep empty to leave password unchanged."
+
+#~ msgid "Role"
+#~ msgstr "Role"
+
+#~ msgid "Billing"
+#~ msgstr "Billing"
+
+#~ msgid "Billing Address"
+#~ msgstr "Billing Address"
+
+#~ msgid "Create new address."
+#~ msgstr "Create new address."
+
+#~ msgid "Currency"
+#~ msgstr "Currency"
+
+#~ msgid "VAT Reg. No."
+#~ msgstr "VAT Reg. No."
+
+#~ msgid "Auto Invoice Frequency"
+#~ msgstr "Auto Invoice Frequency"
+
+#~ msgid "auto invoice"
+#~ msgstr "auto invoice"
+
+#~ msgid "eCommerce"
+#~ msgstr "eCommerce"
+
+#~ msgid "Shipping Address"
+#~ msgstr "Shipping Address"
+
+#~ msgid "can rent"
+#~ msgstr "can rent"
+
+#~ msgid "deactivate"
+#~ msgstr "deactivate"
+
+#~ msgid "activate"
+#~ msgstr "activate"
+
+#~ msgid "users"
+#~ msgstr "users"
+
+#~ msgid "new user"
+#~ msgstr "new user"
+
+#~ msgid "The user will be notified by e-mail when her account is activated."
+#~ msgstr "The user will be notified by e-mail when her account is activated."
+
+#~ msgid ""
+#~ "You can temporarily use the identity of a user by clicking on the "
+#~ "`become` button in the row of that user."
+#~ msgstr ""
+#~ "You can temporarily use the identity of a user by clicking on the "
+#~ "`become` button in the row of that user."
+
+#~ msgid "Active?"
+#~ msgstr "Active?"
+
+#~ msgid "Notified?"
+#~ msgstr "Notified?"
+
+#~ msgid "Auto inv.?"
+#~ msgstr "Auto inv.?"
+
+#~ msgid "Rent?"
+#~ msgstr "Rent?"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "become"
+#~ msgstr "become"
+
+#~ msgid "Login"
+#~ msgstr "Login"
+
+#~ msgid "virtual user"
+#~ msgstr "virtual user"
+
+#~ msgid "Invoice Frequency"
+#~ msgstr "Invoice Frequency"
+
+#~ msgid "virtual users"
+#~ msgstr "virtual users"
+
+#~ msgid "new virtual user"
+#~ msgstr "new virtual user"
+
+#~ msgid ""
+#~ "Virtual users are users which you want to track and associated with other "
+#~ "items (i.e. an order), These users didn't sign up directly but may have "
+#~ "been creating a temporary account."
+#~ msgstr ""
+#~ "Virtual users are users which you want to track and associated with other "
+#~ "items (i.e. an order), These users didn't sign up directly but may have "
+#~ "been creating a temporary account."
+
+#~ msgid "Items"
+#~ msgstr "Items"
+
+#~ msgid "Size"
+#~ msgstr "Size"
+
+#~ msgid "Could not find vimeo video."
+#~ msgstr "Could not find vimeo video."
+
+#~ msgid "media"
+#~ msgstr "media"
+
+#~ msgid "Versions"
+#~ msgstr "Versions"
+
+#~ msgid "Version"
+#~ msgstr "Version"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "MIME-Type"
+#~ msgstr "MIME-Type"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "regenerate version"
+#~ msgstr "regenerate version"
+
+#~ msgid "Preview"
+#~ msgstr "Preview"
+
+#~ msgid "# dependent"
+#~ msgstr "# dependent"
+
+#~ msgid "There are currently no items available, yet."
+#~ msgstr "There are currently no items available, yet."
+
+#~ msgid "Successfully collected tags."
+#~ msgstr "Successfully collected tags."
+
+#~ msgid "Failed to collect tags."
+#~ msgstr "Failed to collect tags."
+
+#~ msgid "Successfully cleaned tags."
+#~ msgstr "Successfully cleaned tags."
+
+#~ msgid "Failed to clean tags."
+#~ msgstr "Failed to clean tags."
+
+#~ msgid "tag"
+#~ msgstr "tag"
+
+#~ msgid "Description"
+#~ msgstr "Description"
+
+#~ msgid "tags"
+#~ msgstr "tags"
+
+#~ msgid "delete all unused tags"
+#~ msgstr "delete all unused tags"
+
+#~ msgid "collect tags"
+#~ msgstr "collect tags"
+
+#~ msgid "new tag"
+#~ msgstr "new tag"
+
+#~ msgid "Created"
+#~ msgstr "Created"
+
+#~ msgid "Filter"
+#~ msgstr "Filter"
+
+#~ msgid "VAT Standard DE"
+#~ msgstr "VAT Standard DE"
+
+#~ msgid "Includes 19% VAT."
+#~ msgstr "Includes 19% VAT."
+
+#~ msgid "VAT Reduced DE"
+#~ msgstr "VAT Reduced DE"
+
+#~ msgid "Includes 7% VAT."
+#~ msgstr "Includes 7% VAT."
+
+#~ msgid "VAT Reverse Charge"
+#~ msgstr "VAT Reverse Charge"
+
+#~ msgid "Reverse Charge."
+#~ msgstr "Reverse Charge."
+
+#~ msgid "Invoices"
+#~ msgstr "Invoices"
+
+#~ msgid "Payments"
+#~ msgstr "Payments"
+
+#~ msgid "VAT"
+#~ msgstr "VAT"
+
+#~ msgid "red. VAT"
+#~ msgstr "red. VAT"
+
+#~ msgid "Cashflow"
+#~ msgstr "Cashflow"
+
+#~ msgid "balance"
+#~ msgstr "balance"
+
+#~ msgid "total"
+#~ msgstr "total"
+
+#~ msgid "created"
+#~ msgstr "created"
+
+#~ msgid "sent"
+#~ msgstr "sent"
+
+#~ msgid "paid"
+#~ msgstr "paid"
+
+#~ msgid "cancelled"
+#~ msgstr "cancelled"
+
+#~ msgid "awaiting payment"
+#~ msgstr "awaiting payment"
+
+#~ msgid "payment accepted"
+#~ msgstr "payment accepted"
+
+#~ msgid "payment remotely accepted"
+#~ msgstr "payment remotely accepted"
+
+#~ msgid "payment error"
+#~ msgstr "payment error"
+
+#~ msgid "Invoice #{:number} paid."
+#~ msgstr "Invoice #{:number} paid."
+
+#~ msgid "Invoice number"
+#~ msgstr "Invoice number"
+
+#~ msgid "Invoice date"
+#~ msgstr "Invoice date"
+
+#~ msgid "Recipient address"
+#~ msgstr "Recipient address"
+
+#~ msgid "Recipient VAT Reg. No."
+#~ msgstr "Recipient VAT Reg. No."
+
+#~ msgid "Recipient number"
+#~ msgstr "Recipient number"
+
+#~ msgid "Quantity"
+#~ msgstr "Quantity"
+
+#~ msgid "Unit price (net)"
+#~ msgstr "Unit price (net)"
+
+#~ msgid "Line total (net)"
+#~ msgstr "Line total (net)"
+
+#~ msgid "Total (net)"
+#~ msgstr "Total (net)"
+
+#~ msgid "Tax ({:rate}%)"
+#~ msgstr "Tax ({:rate}%)"
+
+#~ msgid "Total (gross)"
+#~ msgstr "Total (gross)"
+
+#~ msgid "Terms"
+#~ msgstr "Terms"
+
+#~ msgid "Note"
+#~ msgstr "Note"
+
+#~ msgid "Tax note"
+#~ msgstr "Tax note"
+
+#~ msgid "Invoice"
+#~ msgstr "Invoice"
+
+#~ msgid "Invoice #{:number}"
+#~ msgstr "Invoice #{:number}"
+
+#~ msgid "Your invoice #{:number}."
+#~ msgstr "Your invoice #{:number}."
+
+#~ msgid "invoice"
+#~ msgstr "invoice"
+
+#~ msgid "locked"
+#~ msgstr "locked"
+
+#~ msgid "unlocked"
+#~ msgstr "unlocked"
+
+#~ msgid ""
+#~ "When the invoice is locked it cannot be changed anymore with the "
+#~ "exception of the outstanding amount."
+#~ msgstr ""
+#~ "When the invoice is locked it cannot be changed anymore with the "
+#~ "exception of the outstanding amount."
+
+#~ msgid "The invoice is automatically locked once sent to the user."
+#~ msgstr "The invoice is automatically locked once sent to the user."
+
+#~ msgid ""
+#~ "The user will be notified by e-mail when the status is changed to `paid`."
+#~ msgstr ""
+#~ "The user will be notified by e-mail when the status is changed to `paid`."
+
+#~ msgid "Date"
+#~ msgstr "Date"
+
+#~ msgid "Invoice date."
+#~ msgstr "Invoice date."
+
+#~ msgid "Visible to recipient."
+#~ msgstr "Visible to recipient."
+
+#~ msgid "Positions"
+#~ msgstr "Positions"
+
+#~ msgid "Unit price"
+#~ msgstr "Unit price"
+
+#~ msgid "Tax"
+#~ msgstr "Tax"
+
+#~ msgid "Tax rate (%)"
+#~ msgstr "Tax rate (%)"
+
+#~ msgid "gross"
+#~ msgstr "gross"
+
+#~ msgid "net"
+#~ msgstr "net"
+
+#~ msgid "add position"
+#~ msgstr "add position"
+
+#~ msgid "Balance"
+#~ msgstr "Balance"
+
+#~ msgid "Automatically generated."
+#~ msgstr "Automatically generated."
+
+#~ msgid "Method"
+#~ msgstr "Method"
+
+#~ msgid "Amount"
+#~ msgstr "Amount"
+
+#~ msgid "add payment"
+#~ msgstr "add payment"
+
+#~ msgid "PDF"
+#~ msgstr "PDF"
+
+#~ msgid "XLSX"
+#~ msgstr "XLSX"
+
+#~ msgid "lock"
+#~ msgstr "lock"
+
+#~ msgid "unlock"
+#~ msgstr "unlock"
+
+#~ msgid "invoices"
+#~ msgstr "invoices"
+
+#~ msgid "new invoice"
+#~ msgstr "new invoice"
+
+#~ msgid "locked?"
+#~ msgstr "locked?"
+
+#~ msgid "payment"
+#~ msgstr "payment"
+
+#~ msgid "Date payment was received."
+#~ msgstr "Date payment was received."
+
+#~ msgid "payments"
+#~ msgstr "payments"
+
+#~ msgid "new payment"
+#~ msgstr "new payment"
+
+#~ msgid ""
+#~ "Payments may be associated with an invoice but do not have to. This is to "
+#~ "cater for situations where you receive a payment that you can only "
+#~ "associate with an invoice later."
+#~ msgstr ""
+#~ "Payments may be associated with an invoice but do not have to. This is to "
+#~ "cater for situations where you receive a payment that you can only "
+#~ "associate with an invoice later."
+
+#~ msgid "Payer"
+#~ msgstr "Payer"
+
+#~ msgid "On Invoice"
+#~ msgstr "On Invoice"
+
+#~ msgid "Debit Cards"
+#~ msgstr "Debit Cards"
+
+#~ msgid "The IBAN is not correctly formatted."
+#~ msgstr "The IBAN is not correctly formatted."
+
+#~ msgid "The BIC is not correctly formatted."
+#~ msgstr "The BIC is not correctly formatted."
+
+#~ msgid "n/a"
+#~ msgstr "n/a"
+
+#~ msgid "debit card"
+#~ msgstr "debit card"
+
+#~ msgid "user has accepted direct debit"
+#~ msgstr "user has accepted direct debit"
+
+#~ msgid "Holder"
+#~ msgstr "Holder"
+
+#~ msgid "IBAN"
+#~ msgstr "IBAN"
+
+#~ msgid "BIC"
+#~ msgstr "BIC"
+
+#~ msgid "Bank"
+#~ msgstr "Bank"
+
+#~ msgid "debit cards"
+#~ msgstr "debit cards"
+
+#~ msgid "new debit card"
+#~ msgstr "new debit card"
+
+#~ msgid "Direct Debit?"
+#~ msgstr "Direct Debit?"
+
+#~ msgid "Scheduled"
+#~ msgstr "Scheduled"
+
+#~ msgid "Recurring"
+#~ msgstr "Recurring"
+
+#~ msgid "monthly"
+#~ msgstr "monthly"
+
+#~ msgid "yearly"
+#~ msgstr "yearly"
+
+#~ msgid "recurring invoice position"
+#~ msgstr "recurring invoice position"
+
+#~ msgid "active"
+#~ msgstr "active"
+
+#~ msgid "inactive"
+#~ msgstr "inactive"
+
+#~ msgid "Frequency"
+#~ msgstr "Frequency"
+
+#~ msgid "Amount currency"
+#~ msgstr "Amount currency"
+
+#~ msgid "Amount type"
+#~ msgstr "Amount type"
+
+#~ msgid "Tax type"
+#~ msgstr "Tax type"
+
+#~ msgid "Tax rate"
+#~ msgstr "Tax rate"
+
+#~ msgid "Total amount (net)"
+#~ msgstr "Total amount (net)"
+
+#~ msgid "recurring invoice positions"
+#~ msgstr "recurring invoice positions"
+
+#~ msgid "recur a new invoice position"
+#~ msgstr "recur a new invoice position"
+
+#~ msgid "scheduled invoice position"
+#~ msgstr "scheduled invoice position"
+
+#~ msgid "run on"
+#~ msgstr "run on"
+
+#~ msgid "scheduled invoice positions"
+#~ msgstr "scheduled invoice positions"
+
+#~ msgid "schedule a new invoice position"
+#~ msgstr "schedule a new invoice position"
+
+#~ msgid "Run on"
+#~ msgstr "Run on"
+
+#~ msgid "immediately"
+#~ msgstr "immediately"
+
+#~ msgid "Banners"
+#~ msgstr "Banners"
+
+#~ msgid "banner"
+#~ msgstr "banner"
+
+#~ msgid "Link"
+#~ msgstr "Link"
+
+#~ msgid "https://foo.com/bar or /bar"
+#~ msgstr "https://foo.com/bar or /bar"
+
+#~ msgid "Provide an URL to make the banner clickable."
+#~ msgstr "Provide an URL to make the banner clickable."
+
+#~ msgid "Category"
+#~ msgstr "Category"
+
+#~ msgid ""
+#~ "Category can be an abstract name by which you want to group banners or "
+#~ "indicate the location of the banner group on the site."
+#~ msgstr ""
+#~ "Category can be an abstract name by which you want to group banners or "
+#~ "indicate the location of the banner group on the site."
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "Medium"
+#~ msgstr "Medium"
+
+#~ msgid "banners"
+#~ msgstr "banners"
+
+#~ msgid "new banner"
+#~ msgstr "new banner"
+
+#~ msgid ""
+#~ "Banners can be used as static banners or - when grouped - as a slideshow "
+#~ "anywhere on your site. The name of the group gives you a hint about the "
+#~ "location of the banner."
+#~ msgstr ""
+#~ "Banners can be used as static banners or - when grouped - as a slideshow "
+#~ "anywhere on your site. The name of the group gives you a hint about the "
+#~ "location of the banner."
+
+#~ msgid ""
+#~ "You can set the order of the banners manually by dragging and dropping "
+#~ "the rows in the table below."
+#~ msgstr ""
+#~ "You can set the order of the banners manually by dragging and dropping "
+#~ "the rows in the table below."
+
+#~ msgid "Group"
+#~ msgstr "Group"
+
+#~ msgid "Projects"
+#~ msgstr "Projects"
+
+#~ msgid "project"
+#~ msgstr "project"
+
+#~ msgid "Release Date"
+#~ msgstr "Release Date"
+
+#~ msgid "Allows you to specify when the project was officially released."
+#~ msgstr "Allows you to specify when the project was officially released."
+
+#~ msgid "Client"
+#~ msgstr "Client"
+
+#~ msgid "Links"
+#~ msgstr "Links"
+
+#~ msgid ""
+#~ "Specify Links as URLs with leading protocol (i.e. `http://example.com`)."
+#~ msgstr ""
+#~ "Specify Links as URLs with leading protocol (i.e. `http://example.com`)."
+
+#~ msgid ""
+#~ "Separate multiple links with newlines so that each one has its own line."
+#~ msgstr ""
+#~ "Separate multiple links with newlines so that each one has its own line."
+
+#~ msgid "Short Description"
+#~ msgstr "Short Description"
+
+#~ msgid "Long Description"
+#~ msgstr "Long Description"
+
+#~ msgid "projects"
+#~ msgstr "projects"
+
+#~ msgid "new project"
+#~ msgstr "new project"
+
+#~ msgid "Rich-Text Content"
+#~ msgstr "Rich-Text Content"
+
+#~ msgid "Page Content"
+#~ msgstr "Page Content"
+
+#~ msgid "Contents"
+#~ msgstr "Contents"
+
+#~ msgid "content"
+#~ msgstr "content"
+
+#~ msgid "Region"
+#~ msgstr "Region"
+
+#~ msgid "contents"
+#~ msgstr "contents"
+
+#~ msgid "Events"
+#~ msgstr "Events"
+
+#~ msgid "Event"
+#~ msgstr "Event"
+
+#~ msgid "Start/end"
+#~ msgstr "Start/end"
+
+#~ msgid "Start"
+#~ msgstr "Start"
+
+#~ msgid "End"
+#~ msgstr "End"
+
+#~ msgid "Open ended?"
+#~ msgstr "Open ended?"
+
+#~ msgid "Location"
+#~ msgstr "Location"
+
+#~ msgid "Content Type"
+#~ msgstr "Content Type"
+
+#~ msgid "Content Text"
+#~ msgstr "Content Text"
+
+#~ msgid "Content Link"
+#~ msgstr "Content Link"
+
+#~ msgid "Associated Films"
+#~ msgstr "Associated Films"
+
+#~ msgid "add event"
+#~ msgstr "add event"
+
+#~ msgid "edit"
+#~ msgstr "edit"
+
+#~ msgid "Films"
+#~ msgstr "Films"
+
+#~ msgid "Film"
+#~ msgstr "Film"
+
+#~ msgid "Year"
+#~ msgstr "Year"
+
+#~ msgid "Order"
+#~ msgstr "Order"
+
+#~ msgid "Runtime (hh:mm:ss)"
+#~ msgstr "Runtime (hh:mm:ss)"
+
+#~ msgid "Color"
+#~ msgstr "Color"
+
+#~ msgid "add film"
+#~ msgstr "add film"
+
+#~ msgid "Layout"
+#~ msgstr "Layout"
+
+#~ msgid "add item"
+#~ msgstr "add item"
+
+#~ msgid "Quiz Sessions"
+#~ msgstr "Quiz Sessions"
+
+#~ msgid "QuizSessions"
+#~ msgstr "QuizSessions"
+
+#~ msgid "quiz session"
+#~ msgstr "quiz session"
+
+#~ msgid "quiz sessions"
+#~ msgstr "quiz sessions"
+
+#~ msgid "Logo"
+#~ msgstr "Logo"
+
+#~ msgid "Social Stream"
+#~ msgstr "Social Stream"
+
+#~ msgid "Successfully polled."
+#~ msgstr "Successfully polled."
+
+#~ msgid "social stream"
+#~ msgstr "social stream"
+
+#~ msgid "refresh"
+#~ msgstr "refresh"
+
+#~ msgid "Excerpt"
+#~ msgstr "Excerpt"
+
+#~ msgid "Brands"
+#~ msgstr "Brands"
+
+#~ msgid "brand"
+#~ msgstr "brand"
+
+#~ msgid "brands"
+#~ msgstr "brands"
+
+#~ msgid "new brand"
+#~ msgstr "new brand"
+
+#~ msgid "Orders"
+#~ msgstr "Orders"
+
+#~ msgid "Product Groups"
+#~ msgstr "Product Groups"
+
+#~ msgid "Products"
+#~ msgstr "Products"
+
+#~ msgid "Shipments"
+#~ msgstr "Shipments"
+
+#~ msgid "Carts"
+#~ msgstr "Carts"
+
+#~ msgid "Open"
+#~ msgstr "Open"
+
+#~ msgid "Expired"
+#~ msgstr "Expired"
+
+#~ msgid "Customers"
+#~ msgstr "Customers"
+
+#~ msgid "In stock"
+#~ msgstr "In stock"
+
+#~ msgid "Pending"
+#~ msgstr "Pending"
+
+#~ msgid "Out of Stock"
+#~ msgstr "Out of Stock"
+
+#~ msgid "expired"
+#~ msgstr "expired"
+
+#~ msgid "closed"
+#~ msgstr "closed"
+
+#~ msgid "Successfully cancelled."
+#~ msgstr "Successfully cancelled."
+
+#~ msgid "Failed to cancel."
+#~ msgstr "Failed to cancel."
+
+#~ msgid "refunding"
+#~ msgstr "refunding"
+
+#~ msgid "on backorder"
+#~ msgstr "on backorder"
+
+#~ msgid "processed"
+#~ msgstr "processed"
+
+#~ msgid "processing"
+#~ msgstr "processing"
+
+#~ msgid "checking out"
+#~ msgstr "checking out"
+
+#~ msgid "checked out"
+#~ msgstr "checked out"
+
+#~ msgid "shipping scheduled"
+#~ msgstr "shipping scheduled"
+
+#~ msgid "shipping error"
+#~ msgstr "shipping error"
+
+#~ msgid "shipping"
+#~ msgstr "shipping"
+
+#~ msgid "shipped"
+#~ msgstr "shipped"
+
+#~ msgid "delivered"
+#~ msgstr "delivered"
+
+#~ msgid "size"
+#~ msgstr "size"
+
+#~ msgid "color"
+#~ msgstr "color"
+
+#~ msgid "Status changed."
+#~ msgstr "Status changed."
+
+#~ msgid "Failed to change status."
+#~ msgstr "Failed to change status."
+
+#~ msgid "You must select a method."
+#~ msgstr "You must select a method."
+
+#~ msgid "You must accept the terms."
+#~ msgstr "You must accept the terms."
+
+#~ msgid "Order No."
+#~ msgstr "Order No."
+
+#~ msgid "Your order #{:number}."
+#~ msgstr "Your order #{:number}."
+
+#~ msgid "Order #{:number} shipped."
+#~ msgstr "Order #{:number} shipped."
+
+#~ msgid "Untitled"
+#~ msgstr "Untitled"
+
+#~ msgid "order"
+#~ msgstr "order"
+
+#~ msgid "orders"
+#~ msgstr "orders"
+
+#~ msgid "The order number is automatically generated."
+#~ msgstr "The order number is automatically generated."
+
+#~ msgid "Shipment"
+#~ msgstr "Shipment"
+
+#~ msgid "carts"
+#~ msgstr "carts"
+
+#~ msgid "Total amount (net) "
+#~ msgstr "Total amount (net) "
+
+#~ msgid "Total quantity"
+#~ msgstr "Total quantity"
+
+#~ msgid "cancel"
+#~ msgstr "cancel"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Note from user"
+#~ msgstr "Note from user"
+
+#~ msgid "Private note"
+#~ msgstr "Private note"
+
+#~ msgid "Never visible to user."
+#~ msgstr "Never visible to user."
+
+#~ msgid "Signed up"
+#~ msgstr "Signed up"
+
+#~ msgid "open user"
+#~ msgstr "open user"
+
+#~ msgid "open invoice"
+#~ msgstr "open invoice"
+
+#~ msgid "There is no invoice attached to this order."
+#~ msgstr "There is no invoice attached to this order."
+
+#~ msgid "Tracking Number"
+#~ msgstr "Tracking Number"
+
+#~ msgid "Tracking is available once status is `shipped`."
+#~ msgstr "Tracking is available once status is `shipped`."
+
+#~ msgid "open shipment"
+#~ msgstr "open shipment"
+
+#~ msgid "There is no shipment attached to this order."
+#~ msgstr "There is no shipment attached to this order."
+
+#~ msgid ""
+#~ "Cancelling an order will also cancel associated invoice and shipment - if "
+#~ "possible."
+#~ msgstr ""
+#~ "Cancelling an order will also cancel associated invoice and shipment - if "
+#~ "possible."
+
+#~ msgid ""
+#~ "Once the order was shipped and the invoice paid, mark the order as "
+#~ "`processed` to close it."
+#~ msgstr ""
+#~ "Once the order was shipped and the invoice paid, mark the order as "
+#~ "`processed` to close it."
+
+#~ msgid ""
+#~ "When the order has been checked out, an email along with the invoice is "
+#~ "sent to the user."
+#~ msgstr ""
+#~ "When the order has been checked out, an email along with the invoice is "
+#~ "sent to the user."
+
+#~ msgid ""
+#~ "The basic workflow is: 1. take the order and mark it as `processing`, 2. "
+#~ "check the invoice and register payment, mark the invoice as `paid`, 3. "
+#~ "handle the shipment, 4. mark the order as `processed`."
+#~ msgstr ""
+#~ "The basic workflow is: 1. take the order and mark it as `processing`, 2. "
+#~ "check the invoice and register payment, mark the invoice as `paid`, 3. "
+#~ "handle the shipment, 4. mark the order as `processed`."
+
+#~ msgid "Invoice status"
+#~ msgstr "Invoice status"
+
+#~ msgid "Shipment number"
+#~ msgstr "Shipment number"
+
+#~ msgid "Shipment status"
+#~ msgstr "Shipment status"
+
+#~ msgid "product group"
+#~ msgstr "product group"
+
+#~ msgid "Brand"
+#~ msgstr "Brand"
+
+#~ msgid "product groups"
+#~ msgstr "product groups"
+
+#~ msgid "new product group"
+#~ msgstr "new product group"
+
+#~ msgid "Stock"
+#~ msgstr "Stock"
+
+#~ msgid "products"
+#~ msgstr "products"
+
+#~ msgid "Number/SKU"
+#~ msgstr "Number/SKU"
+
+#~ msgid "Updates real stock."
+#~ msgstr "Updates real stock."
+
+#~ msgid ""
+#~ "Current real stock is {:realCount}, current virtual stock is {:"
+#~ "virtualCount}."
+#~ msgstr ""
+#~ "Current real stock is {:realCount}, current virtual stock is {:"
+#~ "virtualCount}."
+
+#~ msgid "Contained in product group"
+#~ msgstr "Contained in product group"
+
+#~ msgid "Create new product group"
+#~ msgstr "Create new product group"
+
+#~ msgid "Attributes"
+#~ msgstr "Attributes"
+
+#~ msgid "Value"
+#~ msgstr "Value"
+
+#~ msgid "add"
+#~ msgstr "add"
+
+#~ msgid "Prices"
+#~ msgstr "Prices"
+
+#~ msgid "new product"
+#~ msgstr "new product"
+
+#~ msgid "shipment"
+#~ msgstr "shipment"
+
+#~ msgid ""
+#~ "The user will be notified by e-mail when the status is changed to "
+#~ "`shipped`."
+#~ msgstr ""
+#~ "The user will be notified by e-mail when the status is changed to "
+#~ "`shipped`."
+
+#~ msgid "Unit value"
+#~ msgstr "Unit value"
+
+#~ msgid "Line total value (net)"
+#~ msgstr "Line total value (net)"
+
+#~ msgid "Total value (net)"
+#~ msgstr "Total value (net)"
+
+#~ msgid "shipments"
+#~ msgstr "shipments"
+
+#~ msgid "Invoice #{:number}."
+#~ msgstr "Invoice #{:number}."
+
+#~ msgid "You can now rent again."
+#~ msgstr "You can now rent again."
+
+#~ msgid "Vouchers"
+#~ msgstr "Vouchers"
+
+#~ msgid "voucher"
+#~ msgstr "voucher"
+
+#~ msgid "Code"
+#~ msgstr "Code"
+
+#~ msgid "Uses left"
+#~ msgstr "Uses left"
+
+#~ msgid "vouchers"
+#~ msgstr "vouchers"
+
+#~ msgid "new voucher"
+#~ msgstr "new voucher"
+
+#~ msgid "Uses Left"
+#~ msgstr "Uses Left"
+
+#~ msgid "Updates for watched products."
+#~ msgstr "Updates for watched products."
+
+#~ msgid "Watches"
+#~ msgstr "Watches"
+
+#~ msgid "watches"
+#~ msgstr "watches"
+
+#~ msgid "Product"
+#~ msgstr "Product"
