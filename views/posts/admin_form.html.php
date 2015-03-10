@@ -2,9 +2,10 @@
 
 use base_core\extensions\cms\Settings;
 use lithium\security\Auth;
+use lithium\g11n\Message;
 
-$t = function($id) use ($t) {
-	return $t($id, ['scope' => 'cms_post']);
+$t = function($message, array $options = []) {
+	return Message::translate($message, $options + ['scope' => 'cms_post', 'default' => $message]);
 };
 
 $this->set([
