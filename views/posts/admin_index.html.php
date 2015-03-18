@@ -16,12 +16,13 @@ $this->set([
 
 ?>
 <article
-	class="use-index-table"
-	data-endpoint-sort="<?= $this->url([
+	class="use-rich-index"
+	data-endpoint="<?= $this->url([
 		'action' => 'index',
-		'page' => $paginator->getPages()->current,
+		'page' => '__PAGE__',
 		'orderField' => '__ORDER_FIELD__',
-		'orderDirection' => '__ORDER_DIRECTION__'
+		'orderDirection' => '__ORDER_DIRECTION__',
+		'filter' => '__FILTER__'
 	]) ?>"
 >
 
@@ -42,8 +43,15 @@ $this->set([
 					<td data-sort="published" class="date published table-sort"><?= $t('Pubdate') ?>
 					<td data-sort="modified" class="date modified table-sort desc"><?= $t('Modified') ?>
 					<td class="actions">
+						<?= $this->form->field('search', [
+							'type' => 'search',
+							'label' => false,
+							'placeholder' => $t('Filter'),
+							'class' => 'table-search',
+							'value' => $this->_request->filter
+						]) ?>
 			</thead>
-			<tbody class="list">
+			<tbody>
 				<?php foreach ($data as $item): ?>
 				<tr>
 					<td class="flag is-published"><?= ($item->is_published ? '✓' : '×') ?>

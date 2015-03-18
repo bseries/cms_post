@@ -49,6 +49,14 @@ class Posts extends \base_core\models\Base {
 			'fields' => [
 				'authors' => ','
 			]
+		],
+		'base_core\extensions\data\behavior\Searchable' => [
+			'fields' => [
+				'authors',
+				'title',
+				'tags',
+				'source'
+			]
 		]
 	];
 
