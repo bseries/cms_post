@@ -1,6 +1,6 @@
 <?php
 /**
- * Bureau Media
+ * CMS Post
  *
  * Copyright (c) 2013-2014 Atelier Disko - All rights reserved.
  *
