@@ -92,6 +92,57 @@ class Posts extends \base_core\models\Base {
 	public function date($entity) {
 		return DateTime::createFromFormat('Y-m-d H:i:s', $entity->created);
 	}
+
+	// Retrieves the next and previous record, surroundig the current one.
+	//
+	// An order and direction must be given in query, use DESC direction for
+	// date fields, so that next is newer and prev is older.
+	//
+	// FIXME This is a naive implemetation.
+	// http://stackoverflow.com/questions/12293115/how-to-select-rows-surrounding-a-row-not-by-id
+	public function neighbors($entity, array $query = array()) {
+		$query += [
+			'conditions' => [],
+			'fields' => [],
+			'order' => [],
+			// No other constraints can be used.
+		];
+		$next = $prev = null;
+
+		if (!$query['order']) {
+			throw new Exception('Need field/direction in order, none set.');
+		}
+
+		$results = static::find('all', [
+			'conditions' => $query['conditions'],
+			'order' => $query['order'],
+			'fields' => ['id']
+		])->to('array', ['indexed' => false]);
+
+		foreach ($results as $key => $result) {
+			if ($result['id'] != $entity->id) {
+				continue;
+			}
+			if (isset($results[$key + 1])) {
+				$prev = $results[$key + 1]['id'];
+			}
+			if (isset($results[$key - 1])) {
+				$next = $results[$key - 1]['id'];
+			}
+			break;
+		}
+
+		return [
+			'prev' => $prev ? static::find('first', [
+				'conditions' => ['id' => $prev],
+				'fields' => $query['fields']
+			]) : false,
+			'next' => $next ? static::find('first', [
+				'conditions' => ['id' => $next],
+				'fields' => $query['fields']
+			]) : false,
+		];
+	}
 }
 
 Posts::init();
