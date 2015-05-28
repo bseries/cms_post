@@ -42,8 +42,9 @@ class Posts extends \base_core\models\Base {
 		'base_core\extensions\data\behavior\Timestamp',
 		'li3_taggable\extensions\data\behavior\Taggable' => [
 			'field' => 'tags',
-			'tagModel' => false,
-			'filters' => ['strtolower']
+			'tagsModel' => 'base_tag\models\Tags',
+			'filters' => ['strtolower'],
+			'autoMatch' => ['title']
 		],
 		'base_core\extensions\data\behavior\Serializable' => [
 			'fields' => [
