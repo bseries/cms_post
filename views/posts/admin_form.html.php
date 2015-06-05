@@ -71,15 +71,13 @@ $user = Auth::check('default');
 
 		<div class="grid-row">
 			<div class="grid-column-left">
-				<?= $this->form->field('teaser', [
-					'type' => 'textarea',
+				<?= $this->editor->field('teaser', [
 					'label' => $t('Teaser'),
-					'wrap' => ['class' => 'teaser use-editor editor-basic editor-link'],
+					'size' => 'gamma',
+					'features' => 'minimal'
 				]) ?>
 			</div>
-			<div class="grid-column-right">
-
-			</div>
+			<div class="grid-column-right"></div>
 		</div>
 
 		<div class="grid-row">
