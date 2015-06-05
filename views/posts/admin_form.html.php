@@ -63,6 +63,7 @@ $user = Auth::check('default');
 			</div>
 			<div class="grid-column-right">
 				<?= $this->media->field('media', [
+					'label' => $t('Media'),
 					'attachment' => 'joined',
 					'value' => $item->media()
 				]) ?>
