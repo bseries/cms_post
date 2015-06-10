@@ -1,7 +1,6 @@
 <?php
 
 use base_core\extensions\cms\Settings;
-use lithium\security\Auth;
 use lithium\g11n\Message;
 
 $t = function($message, array $options = []) {
@@ -21,7 +20,6 @@ $this->set([
 	]
 ]);
 
-$user = Auth::check('default');
 
 ?>
 <article class="view-<?= $this->_config['controller'] . '-' . $this->_config['template'] ?>">
@@ -32,7 +30,7 @@ $user = Auth::check('default');
 				<?= $this->form->field('authors', [
 					'type' => 'text',
 					'label' => $t('Author/s'),
-					'value' => $item->authors(['serialized' => true]) ?: $user['name']
+					'value' => $item->authors(['serialized' => true]) ?: $authedUser->name
 				]) ?>
 				<div class="help"><?= $t('Separate multiple authors with commas.') ?></div>
 			</div>
