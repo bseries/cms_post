@@ -1,7 +1,8 @@
 <?php
 
-use base_core\extensions\cms\Settings;
 use lithium\g11n\Message;
+use base_core\extensions\cms\Settings;
+use base_core\security\Gate;
 
 $t = function($message, array $options = []) {
 	return Message::translate($message, $options + ['scope' => 'cms_post', 'default' => $message]);
@@ -42,6 +43,9 @@ $this->set([
 					<td data-sort="title" class="emphasize title table-sort"><?= $t('Title') ?>
 					<td data-sort="published" class="date published table-sort"><?= $t('Pubdate') ?>
 					<td data-sort="modified" class="date modified table-sort desc"><?= $t('Modified') ?>
+					<?php if (Gate::check('users')): ?>
+						<td class="user"><?= $t('Owner') ?>
+					<?php endif ?>
 					<td class="actions">
 						<?= $this->form->field('search', [
 							'type' => 'search',
@@ -75,6 +79,10 @@ $this->set([
 						<time datetime="<?= $this->date->format($item->modified, 'w3c') ?>">
 							<?= $this->date->format($item->modified, 'date') ?>
 						</time>
+					<?php if (Gate::check('users')): ?>
+						<td class="user">
+							<?= $item->user()->name ?>
+					<?php endif ?>
 					<td class="actions">
 						<?= $this->html->link($t('delete'), ['id' => $item->id, 'action' => 'delete', 'library' => 'cms_post'], ['class' => 'button delete']) ?>
 						<?php if (Settings::read('post.usePromotion')): ?>
