@@ -1,7 +1,8 @@
 <?php
 
-use base_core\extensions\cms\Settings;
 use lithium\g11n\Message;
+use base_core\extensions\cms\Settings;
+use base_core\security\Gate;
 
 $t = function($message, array $options = []) {
 	return Message::translate($message, $options + ['scope' => 'cms_post', 'default' => $message]);
@@ -20,10 +21,23 @@ $this->set([
 	]
 ]);
 
-
 ?>
 <article class="view-<?= $this->_config['controller'] . '-' . $this->_config['template'] ?>">
 	<?=$this->form->create($item) ?>
+		<?php if (Gate::check('users')): ?>
+			<div class="grid-row">
+				<h1><?= $t('Access') ?></h1>
+
+				<div class="grid-column-left"></div>
+				<div class="grid-column-right">
+					<?= $this->form->field('user_id', [
+						'type' => 'select',
+						'label' => $t('Owner'),
+						'list' => $users
+					]) ?>
+				</div>
+			</div>
+		<?php endif ?>
 		<div class="grid-row">
 			<div class="grid-column-left">
 				<?= $this->form->field('title', ['type' => 'text', 'label' => $t('Title'), 'class' => 'use-for-title']) ?>
