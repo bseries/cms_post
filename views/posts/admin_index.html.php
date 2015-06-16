@@ -2,7 +2,6 @@
 
 use lithium\g11n\Message;
 use base_core\extensions\cms\Settings;
-use base_core\security\Gate;
 
 $t = function($message, array $options = []) {
 	return Message::translate($message, $options + ['scope' => 'cms_post', 'default' => $message]);
@@ -43,7 +42,7 @@ $this->set([
 					<td data-sort="title" class="emphasize title table-sort"><?= $t('Title') ?>
 					<td data-sort="published" class="date published table-sort"><?= $t('Pubdate') ?>
 					<td data-sort="modified" class="date modified table-sort desc"><?= $t('Modified') ?>
-					<?php if (Gate::check('users')): ?>
+					<?php if ($useOwner): ?>
 						<td class="user"><?= $t('Owner') ?>
 					<?php endif ?>
 					<td class="actions">
@@ -79,7 +78,7 @@ $this->set([
 						<time datetime="<?= $this->date->format($item->modified, 'w3c') ?>">
 							<?= $this->date->format($item->modified, 'date') ?>
 						</time>
-					<?php if (Gate::check('users')): ?>
+					<?php if ($useOwner): ?>
 						<td class="user">
 							<?= $item->user()->name ?>
 					<?php endif ?>
