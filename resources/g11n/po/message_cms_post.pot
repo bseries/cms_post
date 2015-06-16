@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cms_post 1.0\n"
 "Report-Msgid-Bugs-To: info@atelierdisko.de\n"
-"POT-Creation-Date: 2015-03-10 12:07+0100\n"
+"POT-Creation-Date: 2015-06-16 14:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,136 +21,144 @@ msgstr ""
 msgid "Posts"
 msgstr ""
 
-#: views/posts/admin_form.html.php:10
+#: views/posts/admin_form.html.php:14
 msgid "untitled"
 msgstr ""
 
-#: views/posts/admin_form.html.php:11
+#: views/posts/admin_form.html.php:15
 msgid "post"
 msgstr ""
 
-#: views/posts/admin_form.html.php:14
+#: views/posts/admin_form.html.php:18
 msgid "published"
 msgstr ""
 
-#: views/posts/admin_form.html.php:14
+#: views/posts/admin_form.html.php:18
 msgid "unpublished"
 msgstr ""
 
-#: views/posts/admin_form.html.php:15
+#: views/posts/admin_form.html.php:19
 msgid "promoted"
 msgstr ""
 
-#: views/posts/admin_form.html.php:15
+#: views/posts/admin_form.html.php:19
 msgid "unpromoted"
 msgstr ""
 
-#: views/posts/admin_form.html.php:26 views/posts/admin_index.html.php:36
+#: views/posts/admin_form.html.php:28
+msgid "Access"
+msgstr ""
+
+#: views/posts/admin_form.html.php:34 views/posts/admin_index.html.php:46
+msgid "Owner"
+msgstr ""
+
+#: views/posts/admin_form.html.php:42 views/posts/admin_index.html.php:42
 msgid "Title"
 msgstr ""
 
-#: views/posts/admin_form.html.php:29
+#: views/posts/admin_form.html.php:45
 msgid "Author/s"
 msgstr ""
 
-#: views/posts/admin_form.html.php:32
+#: views/posts/admin_form.html.php:48
 msgid "Separate multiple authors with commas."
 msgstr ""
 
-#: views/posts/admin_form.html.php:37
+#: views/posts/admin_form.html.php:53
 msgid "Publish date"
 msgstr ""
 
-#: views/posts/admin_form.html.php:40
+#: views/posts/admin_form.html.php:56
 msgid ""
 "Setting a publish date allows to pre- or post-date this item. It is used for "
 "public display."
 msgstr ""
 
-#: views/posts/admin_form.html.php:42
+#: views/posts/admin_form.html.php:58
 msgid "Tags"
 msgstr ""
 
-#: views/posts/admin_form.html.php:43
+#: views/posts/admin_form.html.php:59
 msgid "Separate multiple tags with commas."
 msgstr ""
 
-#: views/posts/admin_form.html.php:47
+#: views/posts/admin_form.html.php:63
 msgid "Source"
 msgstr ""
 
-#: views/posts/admin_form.html.php:54
+#: views/posts/admin_form.html.php:70
 msgid "Cover"
 msgstr ""
 
-#: views/posts/admin_form.html.php:57 views/posts/admin_form.html.php:68
-msgid "select"
-msgstr ""
-
-#: views/posts/admin_form.html.php:62
+#: views/posts/admin_form.html.php:77
 msgid "Media"
 msgstr ""
 
-#: views/posts/admin_form.html.php:77
+#: views/posts/admin_form.html.php:87
 msgid "Teaser"
 msgstr ""
 
-#: views/posts/admin_form.html.php:89
+#: views/posts/admin_form.html.php:97
 msgid "Content"
 msgstr ""
 
-#: views/posts/admin_form.html.php:96 views/posts/admin_index.html.php:68
+#: views/posts/admin_form.html.php:105 views/posts/admin_index.html.php:88
 msgid "promote"
 msgstr ""
 
-#: views/posts/admin_form.html.php:96 views/posts/admin_index.html.php:68
+#: views/posts/admin_form.html.php:105 views/posts/admin_index.html.php:88
 msgid "unpromote"
 msgstr ""
 
-#: views/posts/admin_form.html.php:99 views/posts/admin_index.html.php:70
+#: views/posts/admin_form.html.php:108 views/posts/admin_index.html.php:90
 msgid "publish"
 msgstr ""
 
-#: views/posts/admin_form.html.php:99 views/posts/admin_index.html.php:70
+#: views/posts/admin_form.html.php:108 views/posts/admin_index.html.php:90
 msgid "unpublish"
 msgstr ""
 
-#: views/posts/admin_form.html.php:101
+#: views/posts/admin_form.html.php:110
 msgid "save"
 msgstr ""
 
-#: views/posts/admin_index.html.php:8
+#: views/posts/admin_index.html.php:13
 msgid "posts"
 msgstr ""
 
-#: views/posts/admin_index.html.php:24
+#: views/posts/admin_index.html.php:30
 msgid "new post"
 msgstr ""
 
-#: views/posts/admin_index.html.php:31
+#: views/posts/admin_index.html.php:37
 msgid "publ.?"
 msgstr ""
 
-#: views/posts/admin_index.html.php:33
+#: views/posts/admin_index.html.php:39
 msgid "prom.?"
 msgstr ""
 
-#: views/posts/admin_index.html.php:37
+#: views/posts/admin_index.html.php:43
 msgid "Pubdate"
 msgstr ""
 
-#: views/posts/admin_index.html.php:38
+#: views/posts/admin_index.html.php:44
 msgid "Modified"
 msgstr ""
 
-#: views/posts/admin_index.html.php:66
+#: views/posts/admin_index.html.php:52
+msgid "Filter"
+msgstr ""
+
+#: views/posts/admin_index.html.php:86
 msgid "delete"
 msgstr ""
 
-#: views/posts/admin_index.html.php:71
+#: views/posts/admin_index.html.php:91
 msgid "open"
 msgstr ""
 
-#: views/posts/admin_index.html.php:76
+#: views/posts/admin_index.html.php:96
 msgid "No items available, yet."
 msgstr ""
