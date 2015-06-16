@@ -80,7 +80,7 @@ $this->set([
 						</time>
 					<?php if ($useOwner): ?>
 						<td class="user">
-							<?= $item->user()->name ?>
+							<?= $item->owner()->name ?>
 					<?php endif ?>
 					<td class="actions">
 						<?= $this->html->link($t('delete'), ['id' => $item->id, 'action' => 'delete', 'library' => 'cms_post'], ['class' => 'button delete']) ?>
