@@ -59,7 +59,7 @@ $this->set([
 				<tr>
 					<td class="flag"><i class="material-icons"><?= ($item->is_published ? 'done' : '') ?></i>
 					<?php if (Settings::read('post.usePromotion')): ?>
-						<td class="flag is-promoted"><?= ($item->is_promoted ? '✓' : '×') ?>
+						<td class="flag"><i class="material-icons"><?= ($item->is_promoted ? 'done' : '') ?></i>
 					<?php endif ?>
 
 					<td class="media">
