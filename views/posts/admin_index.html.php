@@ -57,8 +57,7 @@ $this->set([
 			<tbody>
 				<?php foreach ($data as $item): ?>
 				<tr>
-					<td class="flag is-published"><?= ($item->is_published ? '✓' : '×') ?>
-
+					<td class="flag"><i class="material-icons"><?= ($item->is_published ? 'done' : '') ?></i>
 					<?php if (Settings::read('post.usePromotion')): ?>
 						<td class="flag is-promoted"><?= ($item->is_promoted ? '✓' : '×') ?>
 					<?php endif ?>
