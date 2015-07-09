@@ -58,10 +58,12 @@ $this->set([
 				<?= $this->form->field('tags', ['value' => $item->tags(), 'label' => $t('Tags'), 'placeholder' => 'foo, bar']) ?>
 				<div class="help"><?= $t('Separate multiple tags with commas.') ?></div>
 
-				<?= $this->form->field('source', [
-					'type' => 'text',
-					'label' => $t('Source')
-				]) ?>
+				<?php if (Settings::read('post.enableSource')): ?>
+					<?= $this->form->field('source', [
+						'type' => 'text',
+						'label' => $t('Source')
+					]) ?>
+				<?php endif ?>
 			</div>
 		</div>
 		<div class="grid-row">

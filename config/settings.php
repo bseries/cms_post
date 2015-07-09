@@ -14,6 +14,7 @@ namespace cms_post\config;
 
 use base_core\extensions\cms\Settings;
 
-Settings::register('post.enablePromotion', false);
+// Enables the ability to provide a source of the post.
+Settings::register('post.enableSource', true);
 
 ?>
