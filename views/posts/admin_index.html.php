@@ -43,7 +43,7 @@ $this->set([
 					<td data-sort="published" class="date published table-sort"><?= $t('Pubdate') ?>
 					<td data-sort="modified" class="date modified table-sort desc"><?= $t('Modified') ?>
 					<?php if ($useOwner): ?>
-						<td class="user"><?= $t('Owner') ?>
+						<td data-sort="owner.name" class="user table-sort"><?= $t('Owner') ?>
 					<?php endif ?>
 					<td class="actions">
 						<?= $this->form->field('search', [

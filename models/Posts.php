@@ -18,6 +18,10 @@ use DateTime;
 class Posts extends \base_core\models\Base {
 
 	public $belongsTo = [
+		'Owner' => [
+			'to' => 'base_core\models\Users',
+			'key' => 'owner_id'
+		],
 		'CoverMedia' => [
 			'to' => 'base_media\models\Media',
 			'key' => 'cover_media_id'
@@ -53,6 +57,7 @@ class Posts extends \base_core\models\Base {
 		],
 		'base_core\extensions\data\behavior\Searchable' => [
 			'fields' => [
+				'Owner.name',
 				'authors',
 				'title',
 				'tags',
