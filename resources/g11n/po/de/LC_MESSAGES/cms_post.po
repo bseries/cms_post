@@ -148,11 +148,11 @@ msgstr "VÖ-Datum"
 
 #: views/posts/admin_index.html.php:44
 msgid "Modified"
-msgstr "Geändert"
+msgstr "Bearbeitet"
 
 #: views/posts/admin_index.html.php:52
 msgid "Filter"
-msgstr "Filtern"
+msgstr "Filter"
 
 #: views/posts/admin_index.html.php:86
 msgid "delete"
