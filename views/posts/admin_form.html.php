@@ -61,7 +61,6 @@ $this->set([
 					'placeholder' => 'foo, bar',
 					'class' => 'input--tags'
 				]) ?>
-				<div class="help"><?= $t('Separate multiple tags with commas.') ?></div>
 
 				<?php if (Settings::read('post.enableSource')): ?>
 					<?= $this->form->field('source', [
