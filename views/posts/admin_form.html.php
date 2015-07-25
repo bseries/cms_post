@@ -55,7 +55,12 @@ $this->set([
 				]) ?>
 				<div class="help"><?= $t('Setting a publish date allows to pre- or post-date this item. It is used for public display.') ?></div>
 
-				<?= $this->form->field('tags', ['value' => $item->tags(), 'label' => $t('Tags'), 'placeholder' => 'foo, bar']) ?>
+				<?= $this->form->field('tags', [
+					'value' => $item->tags(),
+					'label' => $t('Tags'),
+					'placeholder' => 'foo, bar',
+					'class' => 'input--tags'
+				]) ?>
 				<div class="help"><?= $t('Separate multiple tags with commas.') ?></div>
 
 				<?php if (Settings::read('post.enableSource')): ?>
