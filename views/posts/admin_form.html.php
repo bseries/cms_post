@@ -107,13 +107,26 @@ $this->set([
 		</div>
 
 		<div class="bottom-actions">
-			<?php if (Settings::read('post.usePromotion')): ?>
-				<?= $this->html->link($item->is_promoted ? $t('unpromote') : $t('promote'), ['id' => $item->id, 'action' => $item->is_promoted ? 'unpromote': 'promote', 'library' => 'cms_post'], ['class' => 'button large']) ?>
-			<?php endif ?>
-			<?php if ($item->exists()): ?>
-				<?= $this->html->link($item->is_published ? $t('unpublish') : $t('publish'), ['id' => $item->id, 'action' => $item->is_published ? 'unpublish': 'publish', 'library' => 'cms_post'], ['class' => 'button large']) ?>
-			<?php endif ?>
-			<?= $this->form->button($t('save'), ['type' => 'submit', 'class' => 'button large save']) ?>
+			<div class="bottom-actions__left">
+				<?php if ($item->exists()): ?>
+					<?= $this->html->link($t('delete'), [
+						'action' => 'delete', 'id' => $item->id
+					], ['class' => 'button large delete']) ?>
+				<?php endif ?>
+			</div>
+			<div class="bottom-actions__right">
+				<?php if ($item->exists()): ?>
+					<?php if (Settings::read('post.usePromotion')): ?>
+						<?= $this->html->link($item->is_promoted ? $t('unpromote') : $t('promote'), ['id' => $item->id, 'action' => $item->is_promoted ? 'unpromote': 'promote', 'library' => 'cms_post'], ['class' => 'button large']) ?>
+					<?php endif ?>
+					<?= $this->html->link($item->is_published ? $t('unpublish') : $t('publish'), ['id' => $item->id, 'action' => $item->is_published ? 'unpublish': 'publish'], ['class' => 'button large']) ?>
+				<?php endif ?>
+				<?= $this->form->button($t('save'), [
+					'type' => 'submit',
+					'class' => 'button large save'
+				]) ?>
+			</div>
 		</div>
+
 	<?=$this->form->end() ?>
 </article>

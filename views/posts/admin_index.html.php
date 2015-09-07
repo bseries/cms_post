@@ -82,7 +82,6 @@ $this->set([
 							<?= $item->owner()->name ?>
 					<?php endif ?>
 					<td class="actions">
-						<?= $this->html->link($t('delete'), ['id' => $item->id, 'action' => 'delete', 'library' => 'cms_post'], ['class' => 'button delete']) ?>
 						<?php if (Settings::read('post.usePromotion')): ?>
 							<?= $this->html->link($item->is_promoted ? $t('unpromote') : $t('promote'), ['id' => $item->id, 'action' => $item->is_promoted ? 'unpromote': 'promote', 'library' => 'cms_post'], ['class' => 'button']) ?>
 						<?php endif ?>
