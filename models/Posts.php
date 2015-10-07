@@ -74,13 +74,6 @@ class Posts extends \base_core\models\Base {
 	public static function init() {
 		$model = static::_object();
 
-		$model->validates['title'] = [
-			[
-				'notEmpty',
-				'on' => ['create', 'update'],
-				'message' => 'Dieses Feld darf nicht leer sein.'
-			]
-		];
 		$model->validates['published'] = [
 			[
 				'notEmpty',
