@@ -45,6 +45,9 @@ $this->set([
 					<?php if ($useOwner): ?>
 						<td data-sort="owner.name" class="user table-sort"><?= $t('Owner') ?>
 					<?php endif ?>
+					<?php if ($useSites): ?>
+						<td data-sort="site" class="table-sort"><?= $t('Site') ?>
+					<?php endif ?>
 					<td class="actions">
 						<?= $this->form->field('search', [
 							'type' => 'search',
@@ -80,6 +83,10 @@ $this->set([
 					<?php if ($useOwner): ?>
 						<td class="user">
 							<?= $item->owner()->name ?>
+					<?php endif ?>
+					<?php if ($useSites): ?>
+						<td>
+							<?= $item->site ?: '-' ?>
 					<?php endif ?>
 					<td class="actions">
 						<?php if (Settings::read('post.usePromotion')): ?>
