@@ -76,7 +76,7 @@ $this->set([
 					'class' => 'input--tags'
 				]) ?>
 
-				<?php if (Settings::read('post.enableSource')): ?>
+				<?php if (Settings::read('post.userSource')): ?>
 					<?= $this->form->field('source', [
 						'type' => 'text',
 						'label' => $t('Source')
