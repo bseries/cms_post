@@ -22,7 +22,7 @@ use lithium\g11n\Message;
 
 extract(Message::aliases());
 
-Panes::register('authoring.posts', [
+Panes::register('cms.posts', [
 	'title' => $t('Posts', ['scope' => 'cms_post']),
 	'url' => ['controller' => 'posts', 'action' => 'index', 'library' => 'cms_post', 'admin' => true],
 	'weight' => 40
