@@ -92,6 +92,15 @@ class Posts extends \base_core\models\Base {
 		Validator::add('noSpacesInTags', function($value, $format, $options) {
 			return empty($value) || preg_match('/^([a-z0-9]+)(\s?,\s?[a-z0-9]+)*$/i', $value);
 		});
+
+		if (PROJECT_LOCALE !== PROJECT_LOCALES) {
+			static::bindBehavior('li3_translate\extensions\data\behavior\Translatable', [
+				'fields' => ['title', 'body'],
+				'locale' => PROJECT_LOCALE,
+				'locales' => explode(' ', PROJECT_LOCALES),
+				'strategy' => 'inline'
+			]);
+		}
 	}
 
 	public function date($entity) {
