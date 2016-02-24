@@ -69,14 +69,15 @@ $this->set([
 						'class' => 'use-for-title'
 					]) ?>
 				<?php endif ?>
+			</div>
+			<div class="grid-column-right">
 				<?= $this->form->field('authors', [
 					'type' => 'text',
 					'label' => $t('Author/s'),
 					'value' => $item->authors(['serialized' => true]) ?: $authedUser->name
 				]) ?>
 				<div class="help"><?= $t('Separate multiple authors with commas.') ?></div>
-			</div>
-			<div class="grid-column-right">
+
 				<?= $this->form->field('published', [
 					'type' => 'date',
 					'label' => $t('Publish date'),
@@ -143,8 +144,8 @@ $this->set([
 				<?php foreach ($item->translate('body') as $locale => $value): ?>
 					<?= $this->editor->field("i18n.body.{$locale}", [
 						'label' => $t('Content') . ' (' . $this->g11n->name($locale) . ')',
-						'size' => 'full',
-						'features' => 'beta',
+						'size' => 'beta',
+						'features' => 'full',
 						'value' => $value
 					]) ?>
 				<?php endforeach ?>
