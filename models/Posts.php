@@ -108,6 +108,9 @@ class Posts extends \base_core\models\Base {
 	}
 
 	public function date($entity) {
+		if ($entity->published) {
+			return DateTime::createFromFormat('Y-m-d', $entity->published);
+		}
 		return DateTime::createFromFormat('Y-m-d H:i:s', $entity->created);
 	}
 }
