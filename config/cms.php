@@ -25,4 +25,7 @@ Settings::register('post.useSource', false);
 // Enables the promotion of posts.
 Settings::register('post.usePromotion', true);
 
+// Enables automatic tagging of entities, once saved.
+Settings::register('post.useAutoTagging', false);
+
 ?>

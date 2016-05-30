@@ -17,8 +17,9 @@
 
 namespace cms_post\models;
 
-use lithium\util\Validator;
 use DateTime;
+use base_core\extensions\cms\Settings;
+use lithium\util\Validator;
 
 class Posts extends \base_core\models\Base {
 
@@ -57,8 +58,7 @@ class Posts extends \base_core\models\Base {
 		'li3_taggable\extensions\data\behavior\Taggable' => [
 			'field' => 'tags',
 			'tagsModel' => 'base_tag\models\Tags',
-			'filters' => ['strtolower'],
-			'autoMatch' => ['title']
+			'filters' => ['strtolower']
 		],
 		'base_core\extensions\data\behavior\Serializable' => [
 			'fields' => [
@@ -104,6 +104,9 @@ class Posts extends \base_core\models\Base {
 				'locales' => explode(' ', PROJECT_LOCALES),
 				'strategy' => 'inline'
 			]);
+		}
+		if (Settings::read('post.useAutoTagging')) {
+			static::behavior('Taggable')->config('autoMatch', ['title']);
 		}
 	}
 
