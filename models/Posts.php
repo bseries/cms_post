@@ -19,7 +19,7 @@ namespace cms_post\models;
 
 use DateTime;
 use base_core\extensions\cms\Settings;
-use lithium\util\Validator;
+use lithium\g11n\Message;
 
 class Posts extends \base_core\models\Base {
 
@@ -77,25 +77,23 @@ class Posts extends \base_core\models\Base {
 	];
 
 	public static function init() {
+		extract(Message::aliases());
 		$model = static::_object();
 
 		$model->validates['published'] = [
 			[
 				'notEmpty',
 				'on' => ['create', 'update'],
-				'message' => 'Dieses Feld darf nicht leer sein.'
+				'message' => $t('This field cannot be left blank.', ['scope' => 'cms_post'])
 			]
 		];
 		$model->validates['tags'] = [
 			[
 				'noSpacesInTags',
 				'on' => ['create', 'update'],
-				'message' => 'Es sind keine Leerzeichen innerhalb von Tags erlaubt.'
+				'message' => $t('Tags cannot contain spaces.', ['scope' => 'cms_post'])
 			]
 		];
-		Validator::add('noSpacesInTags', function($value, $format, $options) {
-			return empty($value) || preg_match('/^([^\s]+)(\s?,\s?[^\s]+)*$/i', $value);
-		});
 
 		if (PROJECT_LOCALE !== PROJECT_LOCALES) {
 			static::bindBehavior('li3_translate\extensions\data\behavior\Translatable', [
