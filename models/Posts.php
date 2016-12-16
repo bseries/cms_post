@@ -71,7 +71,8 @@ class Posts extends \base_core\models\Base {
 				'authors',
 				'title',
 				'tags',
-				'source'
+				'source',
+				'site'
 			]
 		]
 	];
