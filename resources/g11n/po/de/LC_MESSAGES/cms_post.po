@@ -48,7 +48,7 @@ msgstr "unpromoted"
 
 #: views/posts/admin_form.html.php:28
 msgid "Access"
-msgstr "Zugriffsrechte"
+msgstr "Zugriff"
 
 #: views/posts/admin_form.html.php:34 views/posts/admin_index.html.php:46
 msgid "Owner"
