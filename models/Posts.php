@@ -68,10 +68,12 @@ class Posts extends \base_core\models\Base {
 		'base_core\extensions\data\behavior\Searchable' => [
 			'fields' => [
 				'Owner.name',
+				'Owner.number',
 				'authors',
 				'title',
 				'tags',
-				'source'
+				'source',
+				'site'
 			]
 		]
 	];
