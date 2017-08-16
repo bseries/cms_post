@@ -86,7 +86,7 @@ class Posts extends \base_core\models\Base {
 			[
 				'notEmpty',
 				'on' => ['create', 'update'],
-				'message' => $t('This field cannot be left blank.', ['scope' => 'cms_post'])
+				'message' => $t('This field cannot be empty.', ['scope' => 'cms_post'])
 			]
 		];
 		$model->validates['tags'] = [
