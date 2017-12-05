@@ -11,12 +11,6 @@ namespace cms_post\config;
 
 use base_core\extensions\cms\Settings;
 
-// Enables the ability to provide a source of the post.
-Settings::register('post.useSource', false);
-
-// Enables the promotion of posts.
-Settings::register('post.usePromotion', true);
-
 // Enables automatic tagging of entities, once saved.
 Settings::register('post.useAutoTagging', false);
 

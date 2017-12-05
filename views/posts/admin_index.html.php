@@ -35,9 +35,7 @@ $this->set([
 			<thead>
 				<tr>
 					<td data-sort="is-published" class="flag is-published table-sort"><?= $t('publ.?') ?>
-					<?php if (Settings::read('post.usePromotion')): ?>
-						<td data-sort="is-promoted" class="flag is-promoted table-sort"><?= $t('prom.?') ?>
-					<?php endif ?>
+					<td data-sort="is-promoted" class="flag is-promoted table-sort"><?= $t('prom.?') ?>
 					<td class="media">
 					<td data-sort="title" class="emphasize title table-sort"><?= $t('Title') ?>
 					<td data-sort="published" class="date published table-sort"><?= $t('Pubdate') ?>
@@ -61,9 +59,7 @@ $this->set([
 				<?php foreach ($data as $item): ?>
 				<tr>
 					<td class="flag"><i class="material-icons"><?= ($item->is_published ? 'done' : '') ?></i>
-					<?php if (Settings::read('post.usePromotion')): ?>
-						<td class="flag"><i class="material-icons"><?= ($item->is_promoted ? 'done' : '') ?></i>
-					<?php endif ?>
+					<td class="flag"><i class="material-icons"><?= ($item->is_promoted ? 'done' : '') ?></i>
 
 					<td class="media">
 						<?php if ($cover = $item->cover()): ?>
@@ -89,9 +85,7 @@ $this->set([
 							<?= $item->site ?: '-' ?>
 					<?php endif ?>
 					<td class="actions">
-						<?php if (Settings::read('post.usePromotion')): ?>
-							<?= $this->html->link($item->is_promoted ? $t('unpromote') : $t('promote'), ['id' => $item->id, 'action' => $item->is_promoted ? 'unpromote': 'promote', 'library' => 'cms_post'], ['class' => 'button']) ?>
-						<?php endif ?>
+						<?= $this->html->link($item->is_promoted ? $t('unpromote') : $t('promote'), ['id' => $item->id, 'action' => $item->is_promoted ? 'unpromote': 'promote', 'library' => 'cms_post'], ['class' => 'button']) ?>
 						<?= $this->html->link($item->is_published ? $t('unpublish') : $t('publish'), ['id' => $item->id, 'action' => $item->is_published ? 'unpublish': 'publish', 'library' => 'cms_post'], ['class' => 'button']) ?>
 						<?= $this->html->link($t('open'), ['id' => $item->id, 'action' => 'edit', 'library' => 'cms_post'], ['class' => 'button']) ?>
 				<?php endforeach ?>

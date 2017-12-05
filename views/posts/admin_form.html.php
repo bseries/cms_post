@@ -92,12 +92,10 @@ $this->set([
 					'class' => 'input--tags'
 				]) ?>
 
-				<?php if (Settings::read('post.useSource')): ?>
-					<?= $this->form->field('source', [
-						'type' => 'text',
-						'label' => $t('Source')
-					]) ?>
-				<?php endif ?>
+				<?= $this->form->field('source', [
+					'type' => 'text',
+					'label' => $t('Source')
+				]) ?>
 			</div>
 		</div>
 		<div class="grid-row">
@@ -168,9 +166,7 @@ $this->set([
 			</div>
 			<div class="bottom-actions__right">
 				<?php if ($item->exists()): ?>
-					<?php if (Settings::read('post.usePromotion')): ?>
-						<?= $this->html->link($item->is_promoted ? $t('unpromote') : $t('promote'), ['id' => $item->id, 'action' => $item->is_promoted ? 'unpromote': 'promote', 'library' => 'cms_post'], ['class' => 'button large']) ?>
-					<?php endif ?>
+					<?= $this->html->link($item->is_promoted ? $t('unpromote') : $t('promote'), ['id' => $item->id, 'action' => $item->is_promoted ? 'unpromote': 'promote', 'library' => 'cms_post'], ['class' => 'button large']) ?>
 					<?= $this->html->link($item->is_published ? $t('unpublish') : $t('publish'), ['id' => $item->id, 'action' => $item->is_published ? 'unpublish': 'publish'], ['class' => 'button large']) ?>
 				<?php endif ?>
 				<?= $this->form->button($t('save'), [
