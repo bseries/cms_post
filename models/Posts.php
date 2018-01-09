@@ -10,6 +10,7 @@
 namespace cms_post\models;
 
 use DateTime;
+use DateTimeZone;
 use base_core\extensions\cms\Settings;
 use lithium\g11n\Message;
 
@@ -104,7 +105,12 @@ class Posts extends \base_core\models\Base {
 
 	public function date($entity) {
 		if ($entity->published) {
-			return DateTime::createFromFormat('Y-m-d', $entity->published);
+			// FIXME Once user provided datetime are normalised to UTC, remove the TZ specification.
+			return DateTime::createFromFormat(
+				'Y-m-d',
+				$entity->published,
+				new DateTimeZone(PROJECT_TIMEZONE)
+			);
 		}
 		return DateTime::createFromFormat('Y-m-d H:i:s', $entity->created);
 	}
