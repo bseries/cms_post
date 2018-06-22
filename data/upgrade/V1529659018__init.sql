@@ -18,4 +18,4 @@ CREATE TABLE `posts` (
   KEY `is_published` (`is_published`),
   KEY `is_promoted` (`is_promoted`),
   KEY `published` (`published`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB;
