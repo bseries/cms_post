@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cms_post 1.0\n"
 "Report-Msgid-Bugs-To: info@atelierdisko.de\n"
-"POT-Creation-Date: 2016-04-13 10:05+0200\n"
+"POT-Creation-Date: 2018-07-12 12:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: config/panes.php:26 config/widgets.php:29
+#: config/panes.php:18 config/widgets.php:21
 msgid "Posts"
+msgstr ""
+
+#: models/Posts.php:82
+msgid "This field cannot be empty."
+msgstr ""
+
+#: models/Posts.php:89
+msgid "Tags cannot contain spaces."
 msgstr ""
 
 #: views/posts/admin_form.html.php:14
@@ -49,7 +57,7 @@ msgstr ""
 msgid "Access"
 msgstr ""
 
-#: views/posts/admin_form.html.php:34 views/posts/admin_index.html.php:46
+#: views/posts/admin_form.html.php:34 views/posts/admin_index.html.php:44
 msgid "Owner"
 msgstr ""
 
@@ -57,12 +65,12 @@ msgstr ""
 msgid "Sites"
 msgstr ""
 
-#: views/posts/admin_form.html.php:48 views/posts/admin_index.html.php:49
+#: views/posts/admin_form.html.php:48 views/posts/admin_index.html.php:47
 msgid "Site"
 msgstr ""
 
 #: views/posts/admin_form.html.php:60 views/posts/admin_form.html.php:68
-#: views/posts/admin_index.html.php:42
+#: views/posts/admin_index.html.php:40
 msgid "Title"
 msgstr ""
 
@@ -88,47 +96,47 @@ msgstr ""
 msgid "Tags"
 msgstr ""
 
-#: views/posts/admin_form.html.php:98
+#: views/posts/admin_form.html.php:97
 msgid "Source"
 msgstr ""
 
-#: views/posts/admin_form.html.php:106
+#: views/posts/admin_form.html.php:104
 msgid "Cover"
 msgstr ""
 
-#: views/posts/admin_form.html.php:113
+#: views/posts/admin_form.html.php:111
 msgid "Media"
 msgstr ""
 
-#: views/posts/admin_form.html.php:125 views/posts/admin_form.html.php:133
+#: views/posts/admin_form.html.php:123 views/posts/admin_form.html.php:131
 msgid "Teaser"
 msgstr ""
 
-#: views/posts/admin_form.html.php:146 views/posts/admin_form.html.php:154
+#: views/posts/admin_form.html.php:144 views/posts/admin_form.html.php:152
 msgid "Content"
 msgstr ""
 
-#: views/posts/admin_form.html.php:164
+#: views/posts/admin_form.html.php:162
 msgid "delete"
 msgstr ""
 
-#: views/posts/admin_form.html.php:172 views/posts/admin_index.html.php:93
+#: views/posts/admin_form.html.php:169 views/posts/admin_index.html.php:88
 msgid "promote"
 msgstr ""
 
-#: views/posts/admin_form.html.php:172 views/posts/admin_index.html.php:93
+#: views/posts/admin_form.html.php:169 views/posts/admin_index.html.php:88
 msgid "unpromote"
 msgstr ""
 
-#: views/posts/admin_form.html.php:174 views/posts/admin_index.html.php:95
+#: views/posts/admin_form.html.php:170 views/posts/admin_index.html.php:89
 msgid "publish"
 msgstr ""
 
-#: views/posts/admin_form.html.php:174 views/posts/admin_index.html.php:95
+#: views/posts/admin_form.html.php:170 views/posts/admin_index.html.php:89
 msgid "unpublish"
 msgstr ""
 
-#: views/posts/admin_form.html.php:176
+#: views/posts/admin_form.html.php:172
 msgid "save"
 msgstr ""
 
@@ -140,26 +148,26 @@ msgstr ""
 msgid "publ.?"
 msgstr ""
 
-#: views/posts/admin_index.html.php:39
+#: views/posts/admin_index.html.php:38
 msgid "prom.?"
 msgstr ""
 
-#: views/posts/admin_index.html.php:43
+#: views/posts/admin_index.html.php:41
 msgid "Pubdate"
 msgstr ""
 
-#: views/posts/admin_index.html.php:44
+#: views/posts/admin_index.html.php:42
 msgid "Modified"
 msgstr ""
 
-#: views/posts/admin_index.html.php:55
+#: views/posts/admin_index.html.php:53
 msgid "Filter"
 msgstr ""
 
-#: views/posts/admin_index.html.php:96
+#: views/posts/admin_index.html.php:90
 msgid "open"
 msgstr ""
 
-#: views/posts/admin_index.html.php:101
+#: views/posts/admin_index.html.php:95
 msgid "No items available, yet."
 msgstr ""

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cms_post 1.0\n"
 "Report-Msgid-Bugs-To: info@atelierdisko.de\n"
-"POT-Creation-Date: 2016-04-13 10:05+0200\n"
-"PO-Revision-Date: 2016-04-13 10:05+0100\n"
+"POT-Creation-Date: 2018-07-12 12:51+0200\n"
+"PO-Revision-Date: 2018-07-12 12:56+0200\n"
 "Last-Translator: David Persson <davidpersson@gmx.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -16,11 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.8.12\n"
 
-#: config/panes.php:26 config/widgets.php:29
+#: config/panes.php:18 config/widgets.php:21
 msgid "Posts"
 msgstr "Posts"
+
+#: models/Posts.php:82
+msgid "This field cannot be empty."
+msgstr "Dieses Feld darf nicht leer sein."
+
+#: models/Posts.php:89
+msgid "Tags cannot contain spaces."
+msgstr "Innerhalb von Tags können keine Leerzeichen genutzt werden."
 
 #: views/posts/admin_form.html.php:14
 msgid "untitled"
@@ -50,7 +58,7 @@ msgstr "unpromoted"
 msgid "Access"
 msgstr "Zugriff"
 
-#: views/posts/admin_form.html.php:34 views/posts/admin_index.html.php:46
+#: views/posts/admin_form.html.php:34 views/posts/admin_index.html.php:44
 msgid "Owner"
 msgstr "Eigentümer"
 
@@ -58,12 +66,12 @@ msgstr "Eigentümer"
 msgid "Sites"
 msgstr "Sites"
 
-#: views/posts/admin_form.html.php:48 views/posts/admin_index.html.php:49
+#: views/posts/admin_form.html.php:48 views/posts/admin_index.html.php:47
 msgid "Site"
 msgstr "Site"
 
 #: views/posts/admin_form.html.php:60 views/posts/admin_form.html.php:68
-#: views/posts/admin_index.html.php:42
+#: views/posts/admin_index.html.php:40
 msgid "Title"
 msgstr "Titel"
 
@@ -91,47 +99,47 @@ msgstr ""
 msgid "Tags"
 msgstr "Tags"
 
-#: views/posts/admin_form.html.php:98
+#: views/posts/admin_form.html.php:97
 msgid "Source"
 msgstr "Quelle"
 
-#: views/posts/admin_form.html.php:106
+#: views/posts/admin_form.html.php:104
 msgid "Cover"
 msgstr "Cover"
 
-#: views/posts/admin_form.html.php:113
+#: views/posts/admin_form.html.php:111
 msgid "Media"
 msgstr "Medien"
 
-#: views/posts/admin_form.html.php:125 views/posts/admin_form.html.php:133
+#: views/posts/admin_form.html.php:123 views/posts/admin_form.html.php:131
 msgid "Teaser"
 msgstr "Anreißer"
 
-#: views/posts/admin_form.html.php:146 views/posts/admin_form.html.php:154
+#: views/posts/admin_form.html.php:144 views/posts/admin_form.html.php:152
 msgid "Content"
 msgstr "Inhalt"
 
-#: views/posts/admin_form.html.php:164
+#: views/posts/admin_form.html.php:162
 msgid "delete"
 msgstr "löschen"
 
-#: views/posts/admin_form.html.php:172 views/posts/admin_index.html.php:93
+#: views/posts/admin_form.html.php:169 views/posts/admin_index.html.php:88
 msgid "promote"
 msgstr "promoten"
 
-#: views/posts/admin_form.html.php:172 views/posts/admin_index.html.php:93
+#: views/posts/admin_form.html.php:169 views/posts/admin_index.html.php:88
 msgid "unpromote"
 msgstr "unpromoten"
 
-#: views/posts/admin_form.html.php:174 views/posts/admin_index.html.php:95
+#: views/posts/admin_form.html.php:170 views/posts/admin_index.html.php:89
 msgid "publish"
 msgstr "publizieren"
 
-#: views/posts/admin_form.html.php:174 views/posts/admin_index.html.php:95
+#: views/posts/admin_form.html.php:170 views/posts/admin_index.html.php:89
 msgid "unpublish"
 msgstr "depublizieren"
 
-#: views/posts/admin_form.html.php:176
+#: views/posts/admin_form.html.php:172
 msgid "save"
 msgstr "speichern"
 
@@ -143,27 +151,27 @@ msgstr "Posts"
 msgid "publ.?"
 msgstr "publ.?"
 
-#: views/posts/admin_index.html.php:39
+#: views/posts/admin_index.html.php:38
 msgid "prom.?"
 msgstr "prom.?"
 
-#: views/posts/admin_index.html.php:43
+#: views/posts/admin_index.html.php:41
 msgid "Pubdate"
 msgstr "VÖ-Datum"
 
-#: views/posts/admin_index.html.php:44
+#: views/posts/admin_index.html.php:42
 msgid "Modified"
 msgstr "Bearbeitet"
 
-#: views/posts/admin_index.html.php:55
+#: views/posts/admin_index.html.php:53
 msgid "Filter"
 msgstr "Filter"
 
-#: views/posts/admin_index.html.php:96
+#: views/posts/admin_index.html.php:90
 msgid "open"
 msgstr "öffnen"
 
-#: views/posts/admin_index.html.php:101
+#: views/posts/admin_index.html.php:95
 msgid "No items available, yet."
 msgstr "Keine Objekte verfügbar."
 
