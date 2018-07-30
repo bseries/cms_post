@@ -62,7 +62,7 @@ $this->set([
 					<td class="flag"><i class="material-icons"><?= ($item->is_promoted ? 'done' : '') ?></i>
 
 					<td class="media">
-						<?php if ($cover = $item->cover()): ?>
+						<?php if (($cover = $item->cover()) && $cover->hasVersion('fix3admin')): ?>
 							<?= $this->media->image($cover->version('fix3admin'), [
 								'data-media-id' => $cover->id, 'alt' => 'preview'
 							]) ?>
